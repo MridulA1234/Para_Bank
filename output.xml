@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-06-18T12:11:26.990271" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="D:\parabank\tests\ui\test_login.robot">
+<kw name="Load Environment" owner="common_keywords" type="SETUP">
+<kw name="Load Env">
+<msg time="2026-06-18T12:11:27.277593" level="FAIL">No keyword with name 'Load Env' found.</msg>
+<arg>${ENV}</arg>
+<status status="FAIL" start="2026-06-18T12:11:27.277547" elapsed="0.000094">No keyword with name 'Load Env' found.</status>
+</kw>
+<kw name="Get Env">
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="NOT RUN" start="2026-06-18T12:11:27.277771" elapsed="0.000021"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<arg>${BASE_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" start="2026-06-18T12:11:27.277883" elapsed="0.000022"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Loaded BASE_URL=${BASE_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-06-18T12:11:27.277980" elapsed="0.000018"/>
+</kw>
+<status status="FAIL" start="2026-06-18T12:11:27.276148" elapsed="0.001944">No keyword with name 'Load Env' found.</status>
+</kw>
+<test id="s1-t1" name="TC-UI-02 Login with Valid Credentials" line="11">
+<doc>Test user login with valid credentials</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-06-18T12:11:27.278152" elapsed="0.000478">Parent suite setup failed:
+No keyword with name 'Load Env' found.</status>
+</test>
+<status status="FAIL" start="2026-06-18T12:11:26.991985" elapsed="0.287198">Suite setup failed:
+No keyword with name 'Load Env' found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Test Login" id="s1" pass="0" fail="1" skip="0">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-06-18T12:11:27.274519" level="ERROR">Error in file 'D:\parabank\resources\keywords\common_keywords.robot' on line 3: Importing library 'D:\parabank\config\environment.py' failed: ModuleNotFoundError: No module named 'yaml'
+Traceback (most recent call last):
+  File "D:\parabank\config\environment.py", line 1, in &lt;module&gt;
+    import yaml
+PYTHONPATH:
+  D:\parabank\config
+  D:\parabank\venv\Scripts\robot.exe
+  C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\python314.zip
+  C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\DLLs
+  C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib
+  C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64
+  D:\parabank\venv
+  D:\parabank\venv\Lib\site-packages</msg>
+</errors>
+</robot>
