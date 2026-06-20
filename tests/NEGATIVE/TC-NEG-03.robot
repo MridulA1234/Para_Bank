@@ -9,10 +9,8 @@ Test Teardown    Close Application
 
 *** Test Cases ***
 TC-NEG-03 Transfer Negative Amount
-    [Documentation]    Enter -100 as transfer amount — app should reject it with an error
-    ...    NOTE: This test is expected to FAIL — ParaBank processes the transfer
-    ...    without showing any error (logged as DEF-001)
-    [Tags]    negative    UI    known-bug
+    [Documentation]    Enter -100 as transfer amount
+    [Tags]    negative
     Ensure User Is Logged In
     Submit Transfer With Negative Amount
     Verify Transfer Is Shown

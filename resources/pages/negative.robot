@@ -5,8 +5,8 @@ Resource    ../../locators/negative_locators.robot
 
 *** Keywords ***
 Login With Invalid Credentials
-    Input Text    ${login_username}    invalidUser_xyz999
-    Input Text    ${login_password}    wrongpassword123
+    Input Text    ${login_username}    invalidUser
+    Input Text    ${login_password}    wrongpassword
     Click Element    ${login_button}
 
 Verify Login Error Is Shown
@@ -21,7 +21,7 @@ Submit Blank Transfer Amount
     Wait Until Keyword Succeeds    10s    1s    Verify From Dropdown Has Options
     Select From List By Index    ${transfer_from_dropdown}    0
     Select From List By Index    ${transfer_to_dropdown}    0
-    # leaving amount blank intentionally
+
     Click Element    ${transfer_button}
 
 Submit Transfer With Negative Amount
