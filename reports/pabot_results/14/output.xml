@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T13:45:56.500693" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\parabank\tests">
+<suite id="s1-s1" name="NEGATIVE" source="D:\parabank\tests\NEGATIVE">
+<suite id="s1-s1-s1" name="TC-NEG-01" source="D:\parabank\tests\NEGATIVE\TC-NEG-01.robot">
+<kw name="Load Environment" owner="common_keywords" type="SETUP">
+<kw name="Load Env" owner="environment">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-06-20T13:45:56.904933" elapsed="0.000742"/>
+</kw>
+<kw name="Get Env" owner="environment">
+<msg time="2026-06-20T13:45:56.906016" level="INFO">${url} = https://parabank.parasoft.com</msg>
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="PASS" start="2026-06-20T13:45:56.905891" elapsed="0.000153"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-06-20T13:45:56.907436" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
+<arg>${BASE_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-06-20T13:45:56.906798" elapsed="0.000682"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-20T13:45:56.908103" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
+<arg>Loaded BASE_URL=${BASE_URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-20T13:45:56.907976" elapsed="0.000156"/>
+</kw>
+<status status="PASS" start="2026-06-20T13:45:56.904451" elapsed="0.004070"/>
+</kw>
+<test id="s1-s1-s1-t1" name="TC-NEG-01 Login with Non Existent User" line="11">
+<kw name="Open Application" owner="common_keywords" type="SETUP">
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-06-20T13:45:56.909415" level="INFO">Length is 29.</msg>
+<arg>${BASE_URL}</arg>
+<arg>Base URL must not be empty. Please set it in config/env.yaml</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-06-20T13:45:56.909296" elapsed="0.000148"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-20T13:45:56.910034" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-20T13:45:56.909868" elapsed="4.118284"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-06-20T13:46:01.030396" elapsed="0.042951"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-20T13:46:06.074739" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-20T13:46:01.074145" elapsed="5.000832"/>
+</kw>
+<doc>Opens the application</doc>
+<status status="PASS" start="2026-06-20T13:45:56.909109" elapsed="9.167865"/>
+</kw>
+<kw name="Login With Invalid Credentials" owner="negative">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-20T13:46:06.079305" level="INFO">Typing text 'invalidUser_xyz999' into text field 'xpath=//input[@name="username"]'.</msg>
+<arg>${login_username}</arg>
+<arg>invalidUser_xyz999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-20T13:46:06.078560" elapsed="0.153585"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-20T13:46:06.235101" level="INFO">Typing text 'wrongpassword123' into text field 'xpath=//input[@name="password"]'.</msg>
+<arg>${login_password}</arg>
+<arg>wrongpassword123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-20T13:46:06.234343" elapsed="0.129023"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-20T13:46:06.366123" level="INFO">Clicking element 'xpath=//input[@value="Log In"]'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-20T13:46:06.365505" elapsed="0.535313"/>
+</kw>
+<status status="PASS" start="2026-06-20T13:46:06.077826" elapsed="0.824683"/>
+</kw>
+<kw name="Verify Login Error Is Shown" owner="negative">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>could not be verified</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-06-20T13:46:06.903421" elapsed="0.040885"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Login error verified — invalid credentials rejected</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-20T13:46:06.945253" elapsed="0.000566"/>
+</kw>
+<status status="PASS" start="2026-06-20T13:46:06.902914" elapsed="0.043355"/>
+</kw>
+<kw name="Close Application" owner="common_keywords" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-06-20T13:46:06.957136" elapsed="7.172091"/>
+</kw>
+<doc>Closing the application</doc>
+<status status="PASS" start="2026-06-20T13:46:06.946961" elapsed="7.182863"/>
+</kw>
+<doc>Verify that logging in with a username that doesnt exist shows an error</doc>
+<tag>negative</tag>
+<tag>UI</tag>
+<status status="PASS" start="2026-06-20T13:45:56.908631" elapsed="17.221551"/>
+</test>
+<status status="PASS" start="2026-06-20T13:45:56.576795" elapsed="17.557708"/>
+</suite>
+<status status="PASS" start="2026-06-20T13:45:56.575772" elapsed="17.564724"/>
+</suite>
+<status status="PASS" start="2026-06-20T13:45:56.566100" elapsed="17.575668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">negative</stat>
+<stat pass="1" fail="0" skip="0">UI</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="NEGATIVE">Tests.NEGATIVE</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC-NEG-01">Tests.NEGATIVE.TC-NEG-01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

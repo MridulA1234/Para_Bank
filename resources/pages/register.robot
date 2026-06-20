@@ -17,7 +17,7 @@ Register User
     Input Text    ${zipcode}    302020
     Input Text    ${phone}    8740810000
     Input Text    ${ssn}    123
-    Input Text    ${username}    Mridul
+    Input Text    ${username}    Mridul12
     Input Text    ${password}    manav
     Input Text    ${confirm_password}    manav
     Click Element    ${register_button}

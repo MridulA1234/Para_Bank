@@ -1,0 +1,25 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verify GET account details API","1261","TC-API-02 Verify Specific Account Details","Tests","2026-06-19","passed","2026-06-19","TC-API-02","API","",""
+"Verify fund transfer API","1104","TC-API-03 Execute Fund Transfer Via API","Tests","2026-06-19","passed","2026-06-19","TC-API-03","API","",""
+"Test the savings account creation process on the banking application","28023","TC-UI-03 Create Savings Account Successfully","Tests","2026-06-19","passed","2026-06-19","TC-UI-03","01 UI","",""
+"Call login API with wrong credentials — expect a non-200 response","1258","TC-NEG-06 Login API with Invalid Credentials","Tests","2026-06-19","passed","2026-06-19","TC-NEG-06","NEGATIVE","",""
+"Test user registration with valid details","23542","TC-UI-01 Successful User Registration","Tests","2026-06-19","passed","2026-06-19","TC-UI-01","01 UI","",""
+"Verify that the account creation success message is displayed","22081","TC-UI-06 Verify Account Creation Success Message","Tests","2026-06-19","passed","2026-06-19","TC-UI-06","01 UI","",""
+"Verify transaction history for destination account","1150","TC-API-04 Verify Credit Transaction History","Tests","2026-06-19","passed","2026-06-19","TC-API-04","API","",""
+"Test the checking account creation process on the banking application","21804","TC-UI-04 Create Checking Account Successfully","Tests","2026-06-19","passed","2026-06-19","TC-UI-04","01 UI","",""
+"Create savings account through UI and check account type in API.","23821","TC-E2E-02 Open Savings Account and Verify via API","Tests","2026-06-19","passed","2026-06-19","TC-E2E-02","E2E","",""
+"Submit the transfer form without entering an amount and check for validation","23354","TC-NEG-02 Blank Transfer Amount","Tests","2026-06-19","passed","2026-06-19","TC-NEG-02","NEGATIVE","",""
+"Verify that account created via UI is successfully available in the API response.","24595","TC-E2E-01 Create Account and Verify via API","Tests","2026-06-19","passed","2026-06-19","TC-E2E-01","E2E","",""
+"Test the fund transfer process between accounts on the banking application","25078","TC-UI-05 Transfer Funds Between Accounts","Tests","2026-06-19","passed","2026-06-19","TC-UI-05","01 UI","",""
+"Enter -100 as transfer amount — app should reject it with an error
+NOTE: This test is expected to FAIL — ParaBank processes the transfer
+without showing any error (logged as DEF-001)","23422","TC-NEG-03 Transfer Negative Amount","Tests","2026-06-19","failed","2026-06-19","TC-NEG-03","NEGATIVE","",""
+"Enter 999999 as amount — far more than any demo account holds
+NOTE: This test is expected to FAIL — ParaBank completes the transfer
+instead of blocking it (logged as DEF-002)","21624","TC-NEG-04 Transfer Amount Greater Than Balance","Tests","2026-06-19","failed","2026-06-19","TC-NEG-04","NEGATIVE","",""
+"Transfer funds through UI and verify the transfer is reflected via API.","28440","TC-E2E-03 Transfer Funds and Check Balance via API","Tests","2026-06-19","passed","2026-06-19","TC-E2E-03","E2E","",""
+"Verify that the transfer success message is displayed after transferring funds","23492","TC-UI-07 Verify Transfer Success Message","Tests","2026-06-19","passed","2026-06-19","TC-UI-07","01 UI","",""
+"Call GET /accounts/000000 with a fake account ID — expect a 4xx response","1033","TC-NEG-05 Invalid Account ID via API","Tests","2026-06-19","passed","2026-06-19","TC-NEG-05","NEGATIVE","",""
+"Verify that logging in with a username that doesnt exist shows an error","18190","TC-NEG-01 Login with Non Existent User","Tests","2026-06-19","passed","2026-06-19","TC-NEG-01","NEGATIVE","",""
+"Validate Account Exists via API","947","TC-API-01 Validate Account Exists via API","Tests","2026-06-19","passed","2026-06-19","TC-API-01","API","",""
+"Test user login with valid credentials","23015","TC-UI-02 Successful Login to ParaBank","Tests","2026-06-19","passed","2026-06-19","TC-UI-02","01 UI","",""

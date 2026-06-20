@@ -1,0 +1,22 @@
+2026-06-20 13:45:46.930327 ==============================================================================
+2026-06-20 13:45:46.951809 Tests
+2026-06-20 13:45:46.951887 ==============================================================================
+2026-06-20 13:45:46.951924 Tests.API
+2026-06-20 13:45:46.953026 ==============================================================================
+2026-06-20 13:45:47.071791 Tests.API.TC-API-04
+2026-06-20 13:45:47.079082 ==============================================================================
+2026-06-20 13:45:47.507562 TC-API-04 Verify Credit Transaction History :: Verify transaction ... [{"id":14587,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":14920,"accountId":13455,"type":"Debit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Sent"},{"id":17584,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":21136,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":21580,"accountId":13455,"type":"Credit","date":1781913600000,"amount":150.00,"description":"Funds Transfer Received"}]
+2026-06-20 13:45:47.507562 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-06-20 13:45:47.529530 | PASS |
+2026-06-20 13:45:47.529530   warnings.warn(
+2026-06-20 13:45:47.529946 ------------------------------------------------------------------------------
+2026-06-20 13:45:47.529970 Tests.API.TC-API-04                                                   | PASS |
+2026-06-20 13:45:47.531546 1 test, 1 passed, 0 failed
+2026-06-20 13:45:47.531567 ==============================================================================
+2026-06-20 13:45:47.531594 Tests.API                                                             | PASS |
+2026-06-20 13:45:47.531851 1 test, 1 passed, 0 failed
+2026-06-20 13:45:47.531868 ==============================================================================
+2026-06-20 13:45:47.531882 Tests                                                                 | PASS |
+2026-06-20 13:45:47.532078 1 test, 1 passed, 0 failed
+2026-06-20 13:45:47.532096 ==============================================================================
+2026-06-20 13:45:47.532110 Output:  D:\parabank\reports\pabot_results\10\output.xml

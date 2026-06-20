@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T12:46:52.508482" rpa="false" schemaversion="5">
+<suite id="s1" name="Performance" source="D:\parabank\tests\Performance\performance.robot">
+<kw name="Create Session To API" owner="api_keywords" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-20T12:46:52.766660" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-20T12:46:52.766445" elapsed="0.000242"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-06-20T12:46:52.767530" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>parabank</arg>
+<arg>${API_BASE_URL}</arg>
+<arg>headers=${headers}</arg>
+<arg>verify=${False}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-06-20T12:46:52.766797" elapsed="0.001061"/>
+</kw>
+<status status="PASS" start="2026-06-20T12:46:52.765980" elapsed="0.002043"/>
+</kw>
+<test id="s1-t1" name="TC-PERF-01 API Response Time Under 2 Seconds" line="8">
+<kw name="Get Customer Accounts" owner="api_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-20T12:46:52.769699" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-20T12:46:52.769408" elapsed="0.000338"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-06-20T12:46:53.278012" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
+ path_url=/parabank/services/bank/customers/12212/accounts 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': 'application/json', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-06-20T12:46:53.278125" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
+ status=200, reason=OK 
+ headers={'Date': 'Sat, 20 Jun 2026 07:16:53 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0e8fd96df233bf8-BOM'} 
+ body=[{"id":13344,"customerId":12212,"type":"CHECKING","balance":1597.43},{"id":13455,"customerId":12212,"type":"SAVINGS","balance":525.50},{"id":13899,"customerId":12212,"type":"SAVINGS","balance":0.00},{"id":14010,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":14121,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14232,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14343,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14676,"customerId":12212,"type":"LOAN","balance":1000.00},{"id":14898,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15009,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15120,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15231,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15675,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15786,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16008,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16119,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16341,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":16896,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":17340,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":17451,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":17673,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":17784,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18561,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18672,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19005,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19116,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19671,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19782,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20004,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":20448,"customerId":12212,"type":"SAVINGS","balance":100.00}] 
+ </msg>
+<msg time="2026-06-20T12:46:53.278187" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-06-20T12:46:53.278356" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>parabank</arg>
+<arg>/customers/${customerId}/accounts</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-06-20T12:46:52.769940" elapsed="0.508437"/>
+</kw>
+<return>
+<value>${response}</value>
+<status status="PASS" start="2026-06-20T12:46:53.278458" elapsed="0.000054"/>
+</return>
+<msg time="2026-06-20T12:46:53.278622" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${CUSTOMER_ID}</arg>
+<status status="PASS" start="2026-06-20T12:46:52.768949" elapsed="0.509693"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-20T12:46:53.279366" level="INFO">${body} = [{'id': 13344, 'customerId': 12212, 'type': 'CHECKING', 'balance': 1597.43}, {'id': 13455, 'customerId': 12212, 'type': 'SAVINGS', 'balance': 525.5}, {'id': 13899, 'customerId': 12212, 'type': 'SAVING...</msg>
+<var>${body}</var>
+<arg>${response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.278891" elapsed="0.000495"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${body}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.279577" elapsed="0.000247"/>
+</kw>
+<kw name="Verify Response Code" owner="api_keywords">
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-06-20T12:46:53.280702" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>${code}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.280402" elapsed="0.000340"/>
+</kw>
+<arg>${response}</arg>
+<arg>200</arg>
+<status status="PASS" start="2026-06-20T12:46:53.280209" elapsed="0.000574"/>
+</kw>
+<kw name="Validate Response Time" owner="api_keywords">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-06-20T12:46:53.281552" level="INFO">${response_time} = 503</msg>
+<var>${response_time}</var>
+<arg>int($response.elapsed.total_seconds() * 1000)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.281360" elapsed="0.000211"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response Time: ${response_time} ms</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.281642" elapsed="0.000134"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response_time} &lt; ${max_ms}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.281970" elapsed="0.000116"/>
+</kw>
+<msg time="2026-06-20T12:46:53.282152" level="INFO">${valid} = True</msg>
+<var>${valid}</var>
+<arg>Should Be True</arg>
+<arg>${response_time} &lt; ${max_ms}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.281861" elapsed="0.000306"/>
+</kw>
+<if>
+<branch type="IF" condition="${valid}">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-06-20T12:46:53.282391" level="INFO">503</msg>
+<arg>${response_time}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-06-20T12:46:53.282326" elapsed="0.000086"/>
+</kw>
+<status status="PASS" start="2026-06-20T12:46:53.282234" elapsed="0.000204"/>
+</branch>
+<branch type="ELSE">
+<kw name="Fail" owner="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" start="2026-06-20T12:46:53.282524" elapsed="0.000014"/>
+</kw>
+<status status="NOT RUN" start="2026-06-20T12:46:53.282466" elapsed="0.000093"/>
+</branch>
+<status status="PASS" start="2026-06-20T12:46:53.282214" elapsed="0.000364"/>
+</if>
+<arg>${response}</arg>
+<status status="PASS" start="2026-06-20T12:46:53.281163" elapsed="0.001443"/>
+</kw>
+<tag>performance</tag>
+<status status="PASS" start="2026-06-20T12:46:52.768151" elapsed="0.514759"/>
+</test>
+<status status="PASS" start="2026-06-20T12:46:52.509642" elapsed="0.774087"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">performance</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Performance">Performance</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

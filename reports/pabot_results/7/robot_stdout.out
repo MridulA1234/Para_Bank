@@ -1,0 +1,20 @@
+==============================================================================
+Tests
+==============================================================================
+Tests.API
+==============================================================================
+Tests.API.TC-API-01
+==============================================================================
+TC-API-01 Validate Account Exists via API :: Validate Account Exis... [{"id":13344,"customerId":12212,"type":"CHECKING","balance":2522.93},{"id":13455,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":13566,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":13899,"customerId":12212,"type":"LOAN","balance":1000.00},{"id":14121,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14232,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14343,"customerId":12212,"type":"LOAN","balance":100.00},{"id":14454,"customerId":12212,"type":"SAVINGS","balance":-9900.00},{"id":14565,"customerId":12212,"type":"SAVINGS","balance":10100.00},{"id":14676,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14787,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14898,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15009,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15120,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":15231,"customerId":12212,"type":"SAVINGS","balance":0.00},{"id":15342,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":15453,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15564,"customerId":12212,"type":"SAVINGS","balance":0.00},{"id":15675,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":15786,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":16008,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":16119,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16230,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16341,"customerId":12212,"type":"SAVINGS","balance":100.00}]
+| PASS |
+------------------------------------------------------------------------------
+Tests.API.TC-API-01                                                   | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests.API                                                             | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\7\output.xml

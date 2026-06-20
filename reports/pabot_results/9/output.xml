@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T13:45:46.764992" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\parabank\tests">
+<suite id="s1-s1" name="API" source="D:\parabank\tests\API">
+<suite id="s1-s1-s1" name="TC-API-03" source="D:\parabank\tests\API\TC-API-03.robot">
+<kw name="Create Session To API" owner="api_keywords" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-20T13:45:47.016844" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-20T13:45:47.016574" elapsed="0.000301"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-06-20T13:45:47.017737" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>parabank</arg>
+<arg>${API_BASE_URL}</arg>
+<arg>headers=${headers}</arg>
+<arg>verify=${False}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-06-20T13:45:47.017471" elapsed="0.000418"/>
+</kw>
+<status status="PASS" start="2026-06-20T13:45:47.016205" elapsed="0.002349"/>
+</kw>
+<test id="s1-s1-s1-t1" name="TC-API-03 Execute Fund Transfer Via API" line="8">
+<kw name="Transfer Funds API" owner="api_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-20T13:45:47.019462" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-20T13:45:47.019328" elapsed="0.000154"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-06-20T13:45:47.020097" level="INFO">${url} = /transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150</msg>
+<var>${url}</var>
+<arg>/transfer?fromAccountId=${fromAccountId}&amp;toAccountId=${toAccountId}&amp;amount=${amount}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-06-20T13:45:47.019932" elapsed="0.000184"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-06-20T13:45:47.476375" level="INFO">POST Request : url=https://parabank.parasoft.com/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
+ path_url=/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': 'application/json', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2026-06-20T13:45:47.476582" level="INFO">POST Response : url=https://parabank.parasoft.com/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
+ status=200, reason=OK 
+ headers={'Date': 'Sat, 20 Jun 2026 08:15:47 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0e953dfea253aeb-BOM'} 
+ body=Successfully transferred $150 from account #13344 to account #13455 
+ </msg>
+<msg time="2026-06-20T13:45:47.476699" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-06-20T13:45:47.476890" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>parabank</arg>
+<arg>url=${url}</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-06-20T13:45:47.020551" elapsed="0.456369"/>
+</kw>
+<return>
+<value>${response}</value>
+<status status="PASS" start="2026-06-20T13:45:47.477538" elapsed="0.000087"/>
+</return>
+<msg time="2026-06-20T13:45:47.477798" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${ACCOUNT_ID}</arg>
+<arg>${ACCOUNT_ID_2}</arg>
+<arg>150</arg>
+<status status="PASS" start="2026-06-20T13:45:47.019089" elapsed="0.458729"/>
+</kw>
+<kw name="Verify Response Code" owner="api_keywords">
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-06-20T13:45:47.479253" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>${code}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-06-20T13:45:47.478893" elapsed="0.000406"/>
+</kw>
+<arg>${response}</arg>
+<arg>200</arg>
+<status status="PASS" start="2026-06-20T13:45:47.478650" elapsed="0.001055"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-20T13:45:47.479843" elapsed="0.000389"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${response.text}</arg>
+<arg>Successfully</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-06-20T13:45:47.480364" elapsed="0.000297"/>
+</kw>
+<doc>Verify fund transfer API</doc>
+<tag>api</tag>
+<status status="PASS" start="2026-06-20T13:45:47.018678" elapsed="0.462118"/>
+</test>
+<status status="PASS" start="2026-06-20T13:45:46.841887" elapsed="0.639422"/>
+</suite>
+<status status="PASS" start="2026-06-20T13:45:46.840742" elapsed="0.642056"/>
+</suite>
+<status status="PASS" start="2026-06-20T13:45:46.830429" elapsed="0.652646"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">api</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="API">Tests.API</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC-API-03">Tests.API.TC-API-03</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

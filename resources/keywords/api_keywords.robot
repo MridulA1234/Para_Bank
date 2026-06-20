@@ -91,3 +91,4 @@ Get Account Balance
     ${balance}=    Set Variable    ${body['balance']}
 
     RETURN    ${balance}
+

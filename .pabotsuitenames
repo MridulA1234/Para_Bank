@@ -1,0 +1,24 @@
+datasources:8da7c246b92d5edf7c44444b5f3fa7823252255e
+commandlineoptions:5ea3922db11a42de3fa4c89e9d9f06972f891d9e
+suitesfrom:no-suites-from-option
+file:5e03f4ce18f7350e32d0d576c3ede972d24537c0
+--suite Tests.01 UI.TC-UI-01
+--suite Tests.01 UI.TC-UI-02
+--suite Tests.01 UI.TC-UI-03
+--suite Tests.01 UI.TC-UI-04
+--suite Tests.01 UI.TC-UI-05
+--suite Tests.01 UI.TC-UI-06
+--suite Tests.01 UI.TC-UI-07
+--suite Tests.API.TC-API-01
+--suite Tests.API.TC-API-02
+--suite Tests.API.TC-API-03
+--suite Tests.API.TC-API-04
+--suite Tests.E2E.TC-E2E-01
+--suite Tests.E2E.TC-E2E-02
+--suite Tests.E2E.TC-E2E-03
+--suite Tests.NEGATIVE.TC-NEG-01
+--suite Tests.NEGATIVE.TC-NEG-02
+--suite Tests.NEGATIVE.TC-NEG-03
+--suite Tests.NEGATIVE.TC-NEG-04
+--suite Tests.NEGATIVE.TC-NEG-05
+--suite Tests.NEGATIVE.TC-NEG-06

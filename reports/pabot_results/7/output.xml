@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T13:45:45.179288" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\parabank\tests">
+<suite id="s1-s1" name="API" source="D:\parabank\tests\API">
+<suite id="s1-s1-s1" name="TC-API-01" source="D:\parabank\tests\API\TC-API-01.robot">
+<kw name="Create Session To API" owner="api_keywords" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-20T13:45:45.479870" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-20T13:45:45.479620" elapsed="0.000281"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-06-20T13:45:45.481312" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>parabank</arg>
+<arg>${API_BASE_URL}</arg>
+<arg>headers=${headers}</arg>
+<arg>verify=${False}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-06-20T13:45:45.480938" elapsed="0.000538"/>
+</kw>
+<status status="PASS" start="2026-06-20T13:45:45.479272" elapsed="0.002707"/>
+</kw>
+<test id="s1-s1-s1-t1" name="TC-API-01 Validate Account Exists via API" line="8">
+<kw name="Get Customer Accounts" owner="api_keywords">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-06-20T13:45:45.482852" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<var>${headers}</var>
+<arg>Accept=application/json</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-06-20T13:45:45.482714" elapsed="0.000159"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-06-20T13:45:45.932960" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
+ path_url=/parabank/services/bank/customers/12212/accounts 
+ headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': 'application/json', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-06-20T13:45:45.933131" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
+ status=200, reason=OK 
+ headers={'Date': 'Sat, 20 Jun 2026 08:15:45 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0e953d63d193a36-BOM'} 
+ body=[{"id":13344,"customerId":12212,"type":"CHECKING","balance":2522.93},{"id":13455,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":13566,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":13899,"customerId":12212,"type":"LOAN","balance":1000.00},{"id":14121,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14232,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14343,"customerId":12212,"type":"LOAN","balance":100.00},{"id":14454,"customerId":12212,"type":"SAVINGS","balance":-9900.00},{"id":14565,"customerId":12212,"type":"SAVINGS","balance":10100.00},{"id":14676,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14787,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14898,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15009,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15120,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":15231,"customerId":12212,"type":"SAVINGS","balance":0.00},{"id":15342,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":15453,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15564,"customerId":12212,"type":"SAVINGS","balance":0.00},{"id":15675,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":15786,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":16008,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":16119,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16230,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16341,"customerId":12212,"type":"SAVINGS","balance":100.00}] 
+ </msg>
+<msg time="2026-06-20T13:45:45.933216" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-06-20T13:45:45.933364" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>parabank</arg>
+<arg>/customers/${customerId}/accounts</arg>
+<arg>headers=${headers}</arg>
+<arg>expected_status=any</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-06-20T13:45:45.483327" elapsed="0.450066"/>
+</kw>
+<return>
+<value>${response}</value>
+<status status="PASS" start="2026-06-20T13:45:45.934318" elapsed="0.000110"/>
+</return>
+<msg time="2026-06-20T13:45:45.934671" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>${CUSTOMER_ID}</arg>
+<status status="PASS" start="2026-06-20T13:45:45.482514" elapsed="0.452182"/>
+</kw>
+<kw name="Verify Response Code" owner="api_keywords">
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-06-20T13:45:45.936511" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>${code}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-06-20T13:45:45.935966" elapsed="0.000608"/>
+</kw>
+<arg>${response}</arg>
+<arg>200</arg>
+<status status="PASS" start="2026-06-20T13:45:45.935408" elapsed="0.001728"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${response.text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-06-20T13:45:45.937327" elapsed="0.000494"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${response.text}</arg>
+<arg>${ACCOUNT_ID}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2026-06-20T13:45:45.937997" elapsed="0.000425"/>
+</kw>
+<doc>Validate Account Exists via API</doc>
+<tag>api</tag>
+<status status="PASS" start="2026-06-20T13:45:45.482104" elapsed="0.456482"/>
+</test>
+<status status="PASS" start="2026-06-20T13:45:45.251615" elapsed="0.687583"/>
+</suite>
+<status status="PASS" start="2026-06-20T13:45:45.250421" elapsed="0.690521"/>
+</suite>
+<status status="PASS" start="2026-06-20T13:45:45.240193" elapsed="0.701037"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">api</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="API">Tests.API</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC-API-01">Tests.API.TC-API-01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,17 @@
+--suite Tests.NEGATIVE.TC-NEG-06
+--variable CALLER_ID:5bb1a4137a924dc082fcc39924e55d33
+--variable PABOTLIBURI:127.0.0.1:8270
+--variable PABOTEXECUTIONPOOLID:4
+--variable PABOTISLASTEXECUTIONINPOOL:1
+--variable PABOTNUMBEROFPROCESSES:5
+--variable PABOTQUEUEINDEX:19
+--variable PABOTLASTLEVEL:
+--outputdir reports\pabot_results\19
+--listener allure_robotframework
+--output output.xml
+--log NONE
+--report NONE
+--xunit NONE
+--consolecolors off
+--consolemarkers off
+tests
