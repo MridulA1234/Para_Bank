@@ -5,7 +5,7 @@ Tests.API
 ==============================================================================
 Tests.API.TC-API-04
 ==============================================================================
-TC-API-04 Verify Credit Transaction History :: Verify transaction ... [{"id":14587,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":14920,"accountId":13455,"type":"Debit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Sent"},{"id":17584,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":21136,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":21580,"accountId":13455,"type":"Credit","date":1781913600000,"amount":150.00,"description":"Funds Transfer Received"}]
+TC-API-04 Verify Credit Transaction History :: Verify transaction ... [{"id":18250,"accountId":13455,"type":"Credit","date":1781913600000,"amount":999999.00,"description":"Funds Transfer Received"},{"id":22468,"accountId":13455,"type":"Credit","date":1781913600000,"amount":999999.00,"description":"Funds Transfer Received"},{"id":33235,"accountId":13455,"type":"Credit","date":1781913600000,"amount":150.00,"description":"Funds Transfer Received"},{"id":33457,"accountId":13455,"type":"Credit","date":1781913600000,"amount":999999.00,"description":"Funds Transfer Received"},{"id":33901,"accountId":13455,"type":"Credit","date":1781913600000,"amount":150.00,"description":"Funds Transfer Received"}]
 | PASS |
 ------------------------------------------------------------------------------
 Tests.API.TC-API-04                                                   | PASS |

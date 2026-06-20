@@ -1,101 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T13:45:46.874304" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:16:45.226344" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="API" source="D:\parabank\tests\API">
 <suite id="s1-s1-s1" name="TC-API-04" source="D:\parabank\tests\API\TC-API-04.robot">
 <kw name="Create Session To API" owner="api_keywords" type="SETUP">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T13:45:47.079783" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-20T14:16:45.622071" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T13:45:47.079527" elapsed="0.000286"/>
+<status status="PASS" start="2026-06-20T14:16:45.621800" elapsed="0.000303"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-06-20T13:45:47.081527" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-06-20T14:16:45.623076" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>parabank</arg>
 <arg>${API_BASE_URL}</arg>
 <arg>headers=${headers}</arg>
 <arg>verify=${False}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-06-20T13:45:47.081280" elapsed="0.000391"/>
+<status status="PASS" start="2026-06-20T14:16:45.622769" elapsed="0.000480"/>
 </kw>
-<status status="PASS" start="2026-06-20T13:45:47.079156" elapsed="0.003114"/>
+<status status="PASS" start="2026-06-20T14:16:45.621433" elapsed="0.002362"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-API-04 Verify Credit Transaction History" line="8">
 <kw name="Get Account Transactions" owner="api_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T13:45:47.083101" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-20T14:16:45.624853" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T13:45:47.082978" elapsed="0.000143"/>
+<status status="PASS" start="2026-06-20T14:16:45.624660" elapsed="0.000226"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-06-20T13:45:47.523618" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
+<msg time="2026-06-20T14:16:46.074557" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
  path_url=/parabank/services/bank/accounts/13455/transactions 
  headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': 'application/json', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-06-20T13:45:47.523809" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
+<msg time="2026-06-20T14:16:46.074674" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
  status=200, reason=OK 
- headers={'Date': 'Sat, 20 Jun 2026 08:15:47 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0e953e049f431ee-BOM'} 
- body=[{"id":14587,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":14920,"accountId":13455,"type":"Debit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Sent"},{"id":17584,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":21136,"accountId":13455,"type":"Credit","date":1781913600000,"amount":100.00,"description":"Funds Transfer Received"},{"id":21580,"accountId":13455,"type":"Credit","date":1781913600000,"amount":150.00,"description":"Funds Transfer Received"}] 
+ headers={'Date': 'Sat, 20 Jun 2026 08:46:46 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0e981403874415e-BOM'} 
+ body=[{"id":18250,"accountId":13455,"type":"Credit","date":1781913600000,"amount":999999.00,"description":"Funds Transfer Received"},{"id":22468,"accountId":13455,"type":"Credit","date":1781913600000,"amount":999999.00,"description":"Funds Transfer Received"},{"id":33235,"accountId":13455,"type":"Credit","date":1781913600000,"amount":150.00,"description":"Funds Transfer Received"},{"id":33457,"accountId":13455,"type":"Credit","date":1781913600000,"amount":999999.00,"description":"Funds Transfer Received"},{"id":33901,"accountId":13455,"type":"Credit","date":1781913600000,"amount":150.00,"description":"Funds Transfer Received"}] 
  </msg>
-<msg time="2026-06-20T13:45:47.523922" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-06-20T14:16:46.074734" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-06-20T13:45:47.524102" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-06-20T14:16:46.074846" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>parabank</arg>
 <arg>/accounts/${accountId}/transactions</arg>
 <arg>headers=${headers}</arg>
 <arg>expected_status=any</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-06-20T13:45:47.083512" elapsed="0.440636"/>
+<status status="PASS" start="2026-06-20T14:16:45.625499" elapsed="0.449367"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-06-20T13:45:47.525576" elapsed="0.000154"/>
+<status status="PASS" start="2026-06-20T14:16:46.076186" elapsed="0.000098"/>
 </return>
-<msg time="2026-06-20T13:45:47.526072" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-06-20T14:16:46.076492" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${ACCOUNT_ID_2}</arg>
-<status status="PASS" start="2026-06-20T13:45:47.082784" elapsed="0.443318"/>
+<status status="PASS" start="2026-06-20T14:16:45.624422" elapsed="0.452089"/>
 </kw>
 <kw name="Verify Response Code" owner="api_keywords">
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-06-20T13:45:47.527981" level="INFO">Argument types are:
+<msg time="2026-06-20T14:16:46.077920" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>${code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-06-20T13:45:47.527384" elapsed="0.000652"/>
+<status status="PASS" start="2026-06-20T14:16:46.077493" elapsed="0.000479"/>
 </kw>
 <arg>${response}</arg>
 <arg>200</arg>
-<status status="PASS" start="2026-06-20T13:45:47.526987" elapsed="0.001486"/>
+<status status="PASS" start="2026-06-20T14:16:46.077206" elapsed="0.001236"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T13:45:47.528618" elapsed="0.000365"/>
+<status status="PASS" start="2026-06-20T14:16:46.078588" elapsed="0.000360"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${response.text}</arg>
 <arg>Credit</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-06-20T13:45:47.529120" elapsed="0.000285"/>
+<status status="PASS" start="2026-06-20T14:16:46.079070" elapsed="0.000317"/>
 </kw>
 <doc>Verify transaction history for destination account</doc>
 <tag>api</tag>
-<status status="PASS" start="2026-06-20T13:45:47.082388" elapsed="0.447152"/>
+<status status="PASS" start="2026-06-20T14:16:45.623930" elapsed="0.455619"/>
 </test>
-<status status="PASS" start="2026-06-20T13:45:46.952935" elapsed="0.577130"/>
+<status status="PASS" start="2026-06-20T14:16:45.318069" elapsed="0.762010"/>
 </suite>
-<status status="PASS" start="2026-06-20T13:45:46.951786" elapsed="0.579813"/>
+<status status="PASS" start="2026-06-20T14:16:45.311984" elapsed="0.769667"/>
 </suite>
-<status status="PASS" start="2026-06-20T13:45:46.942777" elapsed="0.589093"/>
+<status status="PASS" start="2026-06-20T14:16:45.299287" elapsed="0.782633"/>
 </suite>
 <statistics>
 <total>

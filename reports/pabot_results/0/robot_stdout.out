@@ -5,7 +5,7 @@ Tests.01 UI
 ==============================================================================
 Tests.01 UI.TC-UI-01
 ==============================================================================
-TC-UI-01 Successful User Registration :: Test user registration wi... Current URL: https://parabank.parasoft.com/parabank/index.htm;jsessionid=52400FB88776001945569B6ED123839F
+TC-UI-01 Successful User Registration :: Test user registration wi... Current URL: https://parabank.parasoft.com/parabank/index.htm;jsessionid=C5C682C1C7552B9744337372BB9627B6
 User registered successfully
 | PASS |
 ------------------------------------------------------------------------------

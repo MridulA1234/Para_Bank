@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T13:45:56.500693" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:17:03.458142" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="NEGATIVE" source="D:\parabank\tests\NEGATIVE">
 <suite id="s1-s1-s1" name="TC-NEG-01" source="D:\parabank\tests\NEGATIVE\TC-NEG-01.robot">
 <kw name="Load Environment" owner="common_keywords" type="SETUP">
 <kw name="Load Env" owner="environment">
 <arg>${ENV}</arg>
-<status status="PASS" start="2026-06-20T13:45:56.904933" elapsed="0.000742"/>
+<status status="PASS" start="2026-06-20T14:17:03.880587" elapsed="0.001237"/>
 </kw>
 <kw name="Get Env" owner="environment">
-<msg time="2026-06-20T13:45:56.906016" level="INFO">${url} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:17:03.882363" level="INFO">${url} = https://parabank.parasoft.com</msg>
 <var>${url}</var>
 <arg>baseurl</arg>
-<status status="PASS" start="2026-06-20T13:45:56.905891" elapsed="0.000153"/>
+<status status="PASS" start="2026-06-20T14:17:03.882172" elapsed="0.000227"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-06-20T13:45:56.907436" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:17:03.884819" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
 <arg>${BASE_URL}</arg>
 <arg>${url}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-06-20T13:45:56.906798" elapsed="0.000682"/>
+<status status="PASS" start="2026-06-20T14:17:03.883784" elapsed="0.001099"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-06-20T13:45:56.908103" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:17:03.885738" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
 <arg>Loaded BASE_URL=${BASE_URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-06-20T13:45:56.907976" elapsed="0.000156"/>
+<status status="PASS" start="2026-06-20T14:17:03.885552" elapsed="0.000230"/>
 </kw>
-<status status="PASS" start="2026-06-20T13:45:56.904451" elapsed="0.004070"/>
+<status status="PASS" start="2026-06-20T14:17:03.879844" elapsed="0.006511"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-NEG-01 Login with Non Existent User" line="11">
 <kw name="Open Application" owner="common_keywords" type="SETUP">
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T13:45:56.909415" level="INFO">Length is 29.</msg>
+<msg time="2026-06-20T14:17:03.887778" level="INFO">Length is 29.</msg>
 <arg>${BASE_URL}</arg>
 <arg>Base URL must not be empty. Please set it in config/env.yaml</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-06-20T13:45:56.909296" elapsed="0.000148"/>
+<status status="PASS" start="2026-06-20T14:17:03.887503" elapsed="0.000325"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:45:56.910034" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<msg time="2026-06-20T14:17:03.888818" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-20T13:45:56.909868" elapsed="4.118284"/>
+<status status="PASS" start="2026-06-20T14:17:03.888487" elapsed="3.545400"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-06-20T13:46:01.030396" elapsed="0.042951"/>
+<status status="PASS" start="2026-06-20T14:17:07.435812" elapsed="0.026956"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-20T13:46:06.074739" level="INFO">Slept 5 seconds.</msg>
+<msg time="2026-06-20T14:17:12.465190" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-20T13:46:01.074145" elapsed="5.000832"/>
+<status status="PASS" start="2026-06-20T14:17:07.463554" elapsed="5.001804"/>
 </kw>
 <doc>Opens the application</doc>
-<status status="PASS" start="2026-06-20T13:45:56.909109" elapsed="9.167865"/>
+<status status="PASS" start="2026-06-20T14:17:03.887199" elapsed="8.580008"/>
 </kw>
 <kw name="Login With Invalid Credentials" owner="negative">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:46:06.079305" level="INFO">Typing text 'invalidUser_xyz999' into text field 'xpath=//input[@name="username"]'.</msg>
+<msg time="2026-06-20T14:17:12.469008" level="INFO">Typing text 'invalidUser' into text field 'xpath=//input[@name="username"]'.</msg>
 <arg>${login_username}</arg>
-<arg>invalidUser_xyz999</arg>
+<arg>invalidUser</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T13:46:06.078560" elapsed="0.153585"/>
+<status status="PASS" start="2026-06-20T14:17:12.468328" elapsed="0.103557"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:46:06.235101" level="INFO">Typing text 'wrongpassword123' into text field 'xpath=//input[@name="password"]'.</msg>
+<msg time="2026-06-20T14:17:12.574177" level="INFO">Typing text 'wrongpassword' into text field 'xpath=//input[@name="password"]'.</msg>
 <arg>${login_password}</arg>
-<arg>wrongpassword123</arg>
+<arg>wrongpassword</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T13:46:06.234343" elapsed="0.129023"/>
+<status status="PASS" start="2026-06-20T14:17:12.573494" elapsed="0.142934"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:46:06.366123" level="INFO">Clicking element 'xpath=//input[@value="Log In"]'.</msg>
+<msg time="2026-06-20T14:17:12.719031" level="INFO">Clicking element 'xpath=//input[@value="Log In"]'.</msg>
 <arg>${login_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T13:46:06.365505" elapsed="0.535313"/>
+<status status="PASS" start="2026-06-20T14:17:12.718394" elapsed="0.805620"/>
 </kw>
-<status status="PASS" start="2026-06-20T13:46:06.077826" elapsed="0.824683"/>
+<status status="PASS" start="2026-06-20T14:17:12.467856" elapsed="1.060343"/>
 </kw>
 <kw name="Verify Login Error Is Shown" owner="negative">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>could not be verified</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T13:46:06.903421" elapsed="0.040885"/>
+<status status="PASS" start="2026-06-20T14:17:13.561487" elapsed="0.016834"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Login error verified — invalid credentials rejected</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T13:46:06.945253" elapsed="0.000566"/>
+<status status="PASS" start="2026-06-20T14:17:13.578881" elapsed="0.000705"/>
 </kw>
-<status status="PASS" start="2026-06-20T13:46:06.902914" elapsed="0.043355"/>
+<status status="PASS" start="2026-06-20T14:17:13.529508" elapsed="0.050584"/>
 </kw>
 <kw name="Close Application" owner="common_keywords" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-06-20T13:46:06.957136" elapsed="7.172091"/>
+<status status="PASS" start="2026-06-20T14:17:13.581373" elapsed="7.226329"/>
 </kw>
 <doc>Closing the application</doc>
-<status status="PASS" start="2026-06-20T13:46:06.946961" elapsed="7.182863"/>
+<status status="PASS" start="2026-06-20T14:17:13.580800" elapsed="7.227560"/>
 </kw>
 <doc>Verify that logging in with a username that doesnt exist shows an error</doc>
 <tag>negative</tag>
 <tag>UI</tag>
-<status status="PASS" start="2026-06-20T13:45:56.908631" elapsed="17.221551"/>
+<status status="PASS" start="2026-06-20T14:17:03.886552" elapsed="16.922360"/>
 </test>
-<status status="PASS" start="2026-06-20T13:45:56.576795" elapsed="17.557708"/>
+<status status="PASS" start="2026-06-20T14:17:03.540644" elapsed="17.272906"/>
 </suite>
-<status status="PASS" start="2026-06-20T13:45:56.575772" elapsed="17.564724"/>
+<status status="PASS" start="2026-06-20T14:17:03.539610" elapsed="17.280803"/>
 </suite>
-<status status="PASS" start="2026-06-20T13:45:56.566100" elapsed="17.575668"/>
+<status status="PASS" start="2026-06-20T14:17:03.528606" elapsed="17.292624"/>
 </suite>
 <statistics>
 <total>

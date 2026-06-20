@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T13:45:11.183736" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:16:14.374020" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="01 UI" source="D:\parabank\tests\01_UI">
 <suite id="s1-s1-s1" name="TC-UI-02" source="D:\parabank\tests\01_UI\TC-UI-02.robot">
 <kw name="Load Environment" owner="common_keywords" type="SETUP">
 <kw name="Load Env" owner="environment">
 <arg>${ENV}</arg>
-<status status="PASS" start="2026-06-20T13:45:11.556810" elapsed="0.001135"/>
+<status status="PASS" start="2026-06-20T14:16:14.653445" elapsed="0.000851"/>
 </kw>
 <kw name="Get Env" owner="environment">
-<msg time="2026-06-20T13:45:11.558501" level="INFO">${url} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:16:14.654678" level="INFO">${url} = https://parabank.parasoft.com</msg>
 <var>${url}</var>
 <arg>baseurl</arg>
-<status status="PASS" start="2026-06-20T13:45:11.558282" elapsed="0.000266"/>
+<status status="PASS" start="2026-06-20T14:16:14.654537" elapsed="0.000172"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-06-20T13:45:11.560714" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:16:14.656014" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
 <arg>${BASE_URL}</arg>
 <arg>${url}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-06-20T13:45:11.559743" elapsed="0.001036"/>
+<status status="PASS" start="2026-06-20T14:16:14.655450" elapsed="0.000602"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-06-20T13:45:11.562156" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:16:14.656742" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
 <arg>Loaded BASE_URL=${BASE_URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-06-20T13:45:11.561942" elapsed="0.000313"/>
+<status status="PASS" start="2026-06-20T14:16:14.656589" elapsed="0.000187"/>
 </kw>
-<status status="PASS" start="2026-06-20T13:45:11.555897" elapsed="0.007048"/>
+<status status="PASS" start="2026-06-20T14:16:14.652910" elapsed="0.004356"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-UI-02 Successful Login to ParaBank" line="11">
 <kw name="Open Application" owner="common_keywords" type="SETUP">
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T13:45:11.564081" level="INFO">Length is 29.</msg>
+<msg time="2026-06-20T14:16:14.669522" level="INFO">Length is 29.</msg>
 <arg>${BASE_URL}</arg>
 <arg>Base URL must not be empty. Please set it in config/env.yaml</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-06-20T13:45:11.563946" elapsed="0.000170"/>
+<status status="PASS" start="2026-06-20T14:16:14.668838" elapsed="0.000749"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:45:11.565229" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<msg time="2026-06-20T14:16:14.671090" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-20T13:45:11.564845" elapsed="6.902970"/>
+<status status="PASS" start="2026-06-20T14:16:14.670674" elapsed="4.542261"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-06-20T13:45:18.469671" elapsed="0.057595"/>
+<status status="PASS" start="2026-06-20T14:16:19.217461" elapsed="0.181829"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-20T13:45:23.528817" level="INFO">Slept 5 seconds.</msg>
+<msg time="2026-06-20T14:16:24.401630" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-20T13:45:18.527866" elapsed="5.001201"/>
+<status status="PASS" start="2026-06-20T14:16:19.400544" elapsed="5.001426"/>
 </kw>
 <doc>Opens the application</doc>
-<status status="PASS" start="2026-06-20T13:45:11.563757" elapsed="11.967020"/>
+<status status="PASS" start="2026-06-20T14:16:14.668438" elapsed="9.738589"/>
 </kw>
 <kw name="Login User" owner="login">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:45:23.532313" level="INFO">Typing text 'john' into text field 'xpath=//input[@name="username"]'.</msg>
+<msg time="2026-06-20T14:16:24.413954" level="INFO">Typing text 'john' into text field 'xpath=//input[@name="username"]'.</msg>
 <arg>${login_username}</arg>
 <arg>john</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T13:45:23.531770" elapsed="0.180070"/>
+<status status="PASS" start="2026-06-20T14:16:24.412757" elapsed="0.274507"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:45:23.713926" level="INFO">Typing text 'demo' into text field 'xpath=//input[@name="password"]'.</msg>
+<msg time="2026-06-20T14:16:24.690246" level="INFO">Typing text 'demo' into text field 'xpath=//input[@name="password"]'.</msg>
 <arg>${login_password}</arg>
 <arg>demo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T13:45:23.713461" elapsed="0.204393"/>
+<status status="PASS" start="2026-06-20T14:16:24.689535" elapsed="0.317347"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-06-20T13:45:23.921004" level="INFO">Clicking button 'xpath=//input[@value="Log In"]'.</msg>
+<msg time="2026-06-20T14:16:25.011128" level="INFO">Clicking button 'xpath=//input[@value="Log In"]'.</msg>
 <arg>${login_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T13:45:23.920325" elapsed="1.128863"/>
+<status status="PASS" start="2026-06-20T14:16:25.010056" elapsed="1.059444"/>
 </kw>
-<status status="PASS" start="2026-06-20T13:45:23.531339" elapsed="1.521045"/>
+<status status="PASS" start="2026-06-20T14:16:24.408470" elapsed="1.664204"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Accounts Overview</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T13:45:25.059410" elapsed="0.035573"/>
+<status status="PASS" start="2026-06-20T14:16:26.079652" elapsed="0.040048"/>
 </kw>
-<msg time="2026-06-20T13:45:25.095737" level="INFO">${login_success} = True</msg>
+<msg time="2026-06-20T14:16:26.120445" level="INFO">${login_success} = True</msg>
 <var>${login_success}</var>
 <arg>Wait Until Page Contains</arg>
 <arg>Accounts Overview</arg>
 <arg>10s</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-06-20T13:45:25.055634" elapsed="0.040184"/>
+<status status="PASS" start="2026-06-20T14:16:26.074243" elapsed="0.046282"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${login_success}">
 <kw name="Go To" owner="SeleniumLibrary">
 <arg>${BASE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" start="2026-06-20T13:45:25.099436" elapsed="0.000187"/>
+<status status="NOT RUN" start="2026-06-20T14:16:26.124288" elapsed="0.000192"/>
 </kw>
 <kw name="Register User" owner="register">
-<status status="NOT RUN" start="2026-06-20T13:45:25.100486" elapsed="0.000150"/>
+<status status="NOT RUN" start="2026-06-20T14:16:26.134084" elapsed="0.000198"/>
 </kw>
-<status status="NOT RUN" start="2026-06-20T13:45:25.097778" elapsed="0.003197"/>
+<status status="NOT RUN" start="2026-06-20T14:16:26.122643" elapsed="0.012010"/>
 </branch>
-<status status="PASS" start="2026-06-20T13:45:25.097708" elapsed="0.003594"/>
+<status status="PASS" start="2026-06-20T14:16:26.122559" elapsed="0.012515"/>
 </if>
 <kw name="Close Application" owner="common_keywords" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-06-20T13:45:25.103867" elapsed="7.009824"/>
+<status status="PASS" start="2026-06-20T14:16:26.136446" elapsed="7.411798"/>
 </kw>
 <doc>Closing the application</doc>
-<status status="PASS" start="2026-06-20T13:45:25.102816" elapsed="7.011473"/>
+<status status="PASS" start="2026-06-20T14:16:26.135700" elapsed="7.413060"/>
 </kw>
 <doc>Test user login with valid credentials</doc>
 <tag>UI</tag>
-<status status="PASS" start="2026-06-20T13:45:11.563098" elapsed="20.551371"/>
+<status status="PASS" start="2026-06-20T14:16:14.657392" elapsed="18.891730"/>
 </test>
-<status status="PASS" start="2026-06-20T13:45:11.263435" elapsed="20.855309"/>
+<status status="PASS" start="2026-06-20T14:16:14.468902" elapsed="19.086830"/>
 </suite>
-<status status="PASS" start="2026-06-20T13:45:11.262366" elapsed="20.861253"/>
+<status status="PASS" start="2026-06-20T14:16:14.467950" elapsed="19.094333"/>
 </suite>
-<status status="PASS" start="2026-06-20T13:45:11.251976" elapsed="20.873701"/>
+<status status="PASS" start="2026-06-20T14:16:14.458414" elapsed="19.105797"/>
 </suite>
 <statistics>
 <total>
