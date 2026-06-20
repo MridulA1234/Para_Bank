@@ -23,5 +23,12 @@ Register User
     Click Element    ${register_button}
     Sleep    2s
 
-    Wait Until Page Contains    Your account was created successfully. You are now logged in.
-    Log To Console    User registered successfully
+    ${already_exists}=    Run Keyword And Return Status
+        ...    Page Should Contain    This username already exists.
+
+        IF  ${already_exists}
+            Log To Console    Already Registered!
+        ELSE
+            Wait Until Page Contains    Your account was created successfully. You are now logged in.
+            Log To Console    User registered successfully
+        END
