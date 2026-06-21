@@ -5,17 +5,17 @@ Tests.01 UI
 ==============================================================================
 Tests.01 UI.TC-UI-01
 ==============================================================================
-TC-UI-01 Successful User Registration :: Test user registration wi... Current URL: https://parabank.parasoft.com/parabank/index.htm;jsessionid=C5C682C1C7552B9744337372BB9627B6
-User registered successfully
-| PASS |
+TC-UI-01 Successful User Registration :: Test user registration wi... Current URL: https://parabank.parasoft.com/
+| FAIL |
+Element 'xpath=//a[contains(@href,'register.htm')]' not visible after 10 seconds.
 ------------------------------------------------------------------------------
-Tests.01 UI.TC-UI-01                                                  | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 UI.TC-UI-01                                                  | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.01 UI                                                           | PASS |
-1 test, 1 passed, 0 failed
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests                                                                 | PASS |
-1 test, 1 passed, 0 failed
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\0\output.xml

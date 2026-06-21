@@ -1,122 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:16:44.370683" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:51:36.756376" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="API" source="D:\parabank\tests\API">
 <suite id="s1-s1-s1" name="TC-API-03" source="D:\parabank\tests\API\TC-API-03.robot">
 <kw name="Create Session To API" owner="api_keywords" type="SETUP">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T14:16:44.587228" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-20T14:51:36.981201" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.586978" elapsed="0.000281"/>
+<status status="PASS" start="2026-06-20T14:51:36.980918" elapsed="0.000314"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:16:44.588071" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-06-20T14:51:36.983065" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>parabank</arg>
 <arg>${API_BASE_URL}</arg>
 <arg>headers=${headers}</arg>
 <arg>verify=${False}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-06-20T14:16:44.587841" elapsed="0.000366"/>
+<status status="PASS" start="2026-06-20T14:51:36.982759" elapsed="0.000464"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:16:44.586628" elapsed="0.002029"/>
+<status status="PASS" start="2026-06-20T14:51:36.980525" elapsed="0.003390"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-API-03 Execute Fund Transfer Via API" line="8">
 <kw name="Transfer Funds API" owner="api_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T14:16:44.589476" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-20T14:51:36.984915" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.589357" elapsed="0.000138"/>
+<status status="PASS" start="2026-06-20T14:51:36.984782" elapsed="0.000154"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2026-06-20T14:16:44.590045" level="INFO">${url} = /transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150</msg>
+<msg time="2026-06-20T14:51:36.985649" level="INFO">${url} = /transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150</msg>
 <var>${url}</var>
 <arg>/transfer?fromAccountId=${fromAccountId}&amp;toAccountId=${toAccountId}&amp;amount=${amount}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.589904" elapsed="0.000160"/>
+<status status="PASS" start="2026-06-20T14:51:36.985465" elapsed="0.000203"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:16:45.026292" level="INFO">POST Request : url=https://parabank.parasoft.com/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
+<msg time="2026-06-20T14:51:37.243117" level="INFO">POST Request : url=https://parabank.parasoft.com/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
  path_url=/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
  headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': 'application/json', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg time="2026-06-20T14:16:45.026425" level="INFO">POST Response : url=https://parabank.parasoft.com/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
- status=200, reason=OK 
- headers={'Date': 'Sat, 20 Jun 2026 08:46:44 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0e98139be3387ee-BOM'} 
- body=Successfully transferred $150 from account #13344 to account #13455 
+<msg time="2026-06-20T14:51:37.243443" level="INFO">POST Response : url=https://parabank.parasoft.com/parabank/services/bank/transfer?fromAccountId=13344&amp;toAccountId=13455&amp;amount=150 
+ status=429, reason=Too Many Requests 
+ headers={'Date': 'Sat, 20 Jun 2026 09:21:37 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '983', 'Connection': 'keep-alive', 'Retry-After': '42', 'Cache-Control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'Expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'Referrer-Policy': 'same-origin', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Vary': 'accept-encoding', 'Report-To': '{"group":"cf-csp-endpoint","max_age":86400,"endpoints":[{"url":"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=au81UtnBikwLiguCd5WWoULNdgSlU.gQw3NZC3ekIzY-1781947297.1953948-1.0.1.1-81GL54QWBiUo187PyiS0pspYRO_DkDb1ywysJb0WXMEHVhJH4RBcOBGsCxj8eKf6jX.jq5KvFOQZ_pXSzgLDvluze._FWGV1FfcDg9YprjIjgujavjSm1w8liLboijSZeDRR1duBBptexVvGT7DAq3Fe0UFE2PShhCrEv9enIxUb1ibQfGCa9aBOE7Oout8Z"}]}', 'Content-Security-Policy-Report-Only': "script-src 'unsafe-inline' 'unsafe-eval'; connect-src 'none'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=au81UtnBikwLiguCd5WWoULNdgSlU.gQw3NZC3ekIzY-1781947297.1953948-1.0.1.1-81GL54QWBiUo187PyiS0pspYRO_DkDb1ywysJb0WXMEHVhJH4RBcOBGsCxj8eKf6jX.jq5KvFOQZ_pXSzgLDvluze._FWGV1FfcDg9YprjIjgujavjSm1w8liLboijSZeDRR1duBBptexVvGT7DAq3Fe0UFE2PShhCrEv9enIxUb1ibQfGCa9aBOE7Oout8Z; report-to cf-csp-endpoint", 'Server': 'cloudflare', 'CF-RAY': 'a0e9b44f7b4b8eef-BOM'} 
+ body={"type":"https://developers.cloudflare.com/support/troubleshooting/http-status-codes/cloudflare-1xxx-errors/error-1015/","title":"Error 1015: You are being rate limited","status":429,"detail":"You are being rate-limited by the website owner's configuration.","instance":"a0e9b44f7b4b8eef","error_code":1015,"error_name":"rate_limited","error_category":"rate_limit","ray_id":"a0e9b44f7b4b8eef","timestamp":"2026-06-20T09:21:37Z","zone":"parabank.parasoft.com","cloudflare_error":true,"retryable":true,"retry_after":30,"owner_action_required":false,"what_you_should_do":"**Wait and retry.** This block is transient. Wait at least 30 seconds, then retry with exponential backoff.\n\nRecommended approach:\n1. Wait 30 seconds before your next request\n2. If rate-limited again, double the wait time (60s, 120s, etc.)\n3. If rate-limiting persists after 5 retries, stop and reassess your request pattern","footer":"This error was generated by Cloudflare on behalf of the website owner."}
+ 
  </msg>
-<msg time="2026-06-20T14:16:45.026490" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-06-20T14:51:37.243619" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-06-20T14:16:45.026622" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-06-20T14:51:37.243851" level="INFO">${response} = &lt;Response [429]&gt;</msg>
 <var>${response}</var>
 <arg>parabank</arg>
 <arg>url=${url}</arg>
 <arg>headers=${headers}</arg>
 <arg>expected_status=any</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.590472" elapsed="0.436171"/>
+<status status="PASS" start="2026-06-20T14:51:36.986157" elapsed="0.257741"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-06-20T14:16:45.027250" elapsed="0.000085"/>
+<status status="PASS" start="2026-06-20T14:51:37.245273" elapsed="0.000175"/>
 </return>
-<msg time="2026-06-20T14:16:45.027526" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-06-20T14:51:37.245881" level="INFO">${response} = &lt;Response [429]&gt;</msg>
 <var>${response}</var>
 <arg>${ACCOUNT_ID}</arg>
 <arg>${ACCOUNT_ID_2}</arg>
 <arg>150</arg>
-<status status="PASS" start="2026-06-20T14:16:44.589141" elapsed="0.438405"/>
+<status status="PASS" start="2026-06-20T14:51:36.984526" elapsed="0.261404"/>
 </kw>
 <kw name="Verify Response Code" owner="api_keywords">
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-06-20T14:16:45.028597" level="INFO">Argument types are:
+<msg time="2026-06-20T14:51:37.248362" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
+<msg time="2026-06-20T14:51:37.248548" level="FAIL">429 != 200</msg>
 <arg>${response.status_code}</arg>
 <arg>${code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-06-20T14:16:45.028259" elapsed="0.000381"/>
+<status status="FAIL" start="2026-06-20T14:51:37.247568" elapsed="0.001362">429 != 200</status>
 </kw>
 <arg>${response}</arg>
 <arg>200</arg>
-<status status="PASS" start="2026-06-20T14:16:45.028031" elapsed="0.000967"/>
+<status status="FAIL" start="2026-06-20T14:51:37.247055" elapsed="0.003522">429 != 200</status>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:16:45.029127" elapsed="0.000320"/>
+<status status="NOT RUN" start="2026-06-20T14:51:37.251045" elapsed="0.000088"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${response.text}</arg>
 <arg>Successfully</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-06-20T14:16:45.029571" elapsed="0.000260"/>
+<status status="NOT RUN" start="2026-06-20T14:51:37.251384" elapsed="0.000057"/>
 </kw>
 <doc>Verify fund transfer API</doc>
 <tag>api</tag>
-<status status="PASS" start="2026-06-20T14:16:44.588774" elapsed="0.441186"/>
+<status status="FAIL" start="2026-06-20T14:51:36.984059" elapsed="0.267753">429 != 200</status>
 </test>
-<status status="PASS" start="2026-06-20T14:16:44.458672" elapsed="0.571775"/>
+<status status="FAIL" start="2026-06-20T14:51:36.833536" elapsed="0.419447"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:16:44.457564" elapsed="0.574241"/>
+<status status="FAIL" start="2026-06-20T14:51:36.832381" elapsed="0.424429"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:16:44.447031" elapsed="0.585036"/>
+<status status="FAIL" start="2026-06-20T14:51:36.823127" elapsed="0.434361"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">api</stat>
+<stat pass="0" fail="1" skip="0">api</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="API">Tests.API</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC-API-03">Tests.API.TC-API-03</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="API">Tests.API</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC-API-03">Tests.API.TC-API-03</stat>
 </suite>
 </statistics>
 <errors>

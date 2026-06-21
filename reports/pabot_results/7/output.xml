@@ -1,113 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:16:43.858418" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:51:28.095111" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="API" source="D:\parabank\tests\API">
 <suite id="s1-s1-s1" name="TC-API-01" source="D:\parabank\tests\API\TC-API-01.robot">
 <kw name="Create Session To API" owner="api_keywords" type="SETUP">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T14:16:44.149896" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-20T14:51:28.366861" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.149637" elapsed="0.000291"/>
+<status status="PASS" start="2026-06-20T14:51:28.366310" elapsed="0.000596"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:16:44.150766" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-06-20T14:51:28.367910" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>parabank</arg>
 <arg>${API_BASE_URL}</arg>
 <arg>headers=${headers}</arg>
 <arg>verify=${False}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-06-20T14:16:44.150522" elapsed="0.000393"/>
+<status status="PASS" start="2026-06-20T14:51:28.367652" elapsed="0.000409"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:16:44.149276" elapsed="0.002169"/>
+<status status="PASS" start="2026-06-20T14:51:28.365467" elapsed="0.003095"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-API-01 Validate Account Exists via API" line="8">
 <kw name="Get Customer Accounts" owner="api_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T14:16:44.152291" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-20T14:51:28.369457" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.152164" elapsed="0.000147"/>
+<status status="PASS" start="2026-06-20T14:51:28.369312" elapsed="0.000165"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:16:44.611624" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
+<msg time="2026-06-20T14:52:20.560668" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
  path_url=/parabank/services/bank/customers/12212/accounts 
  headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': 'application/json', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-06-20T14:16:44.611748" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
- status=200, reason=OK 
- headers={'Date': 'Sat, 20 Jun 2026 08:46:44 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0e981370b0fc161-BOM'} 
- body=[{"id":12345,"customerId":12212,"type":"CHECKING","balance":-10001006373.50},{"id":12456,"customerId":12212,"type":"CHECKING","balance":285.95},{"id":12567,"customerId":12212,"type":"CHECKING","balance":1000099.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":-2999715.90},{"id":13566,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":13677,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":13899,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14454,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14565,"customerId":12212,"type":"SAVINGS","balance":10000000099.00},{"id":14676,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":15009,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15342,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":15786,"customerId":12212,"type":"SAVINGS","balance":0.00},{"id":15897,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":16341,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16563,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":18117,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18228,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18339,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":18450,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":18561,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18672,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18783,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18894,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19005,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19116,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19227,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":19338,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":19449,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19560,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19671,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19893,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20004,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20115,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20226,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20337,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20448,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":20559,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":20670,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20781,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20892,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21003,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":21336,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21558,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21669,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":21780,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21891,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":22002,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}] 
+<msg time="2026-06-20T14:52:20.561079" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/customers/12212/accounts 
+ status=500, reason=Internal Server Error 
+ headers={'Date': 'Sat, 20 Jun 2026 09:22:20 GMT', 'Content-Type': 'text/html;charset=ISO-8859-1', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Set-Cookie': 'JSESSIONID=997596270C106201D628A19BADDA4F99; Path=/parabank; HttpOnly', 'content-language': 'en-US', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'CF-RAY': 'a0e9b55cae33ceda-BOM'} 
+ body=
+
+
+
+&lt;!-- &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+ --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+		&lt;title&gt;ParaBank | Error&lt;/title&gt;
+		&lt;link href="template.css;jsessionid=997596270C106201D628A19BADDA4F99" rel="stylesheet"
+			type="text/css" /&gt;
+		&lt;link href="style.css;jsessionid=997596270C106201D628A19BADDA4F99" rel="stylesheet"
+			type="text/css" /&gt;
+		&lt;script src="webjars/jquery/4.0.0/jquery.min.js;jsessionid=997596270C106201D628A19BADDA4F99"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+
+	&lt;body
+		
+	    onload="document.login.username.focus();"
+	  &gt;
+		&lt;div id="mainPanel"&gt;
+			
+				
+					
+
+
+
+&lt;div id="topPanel"&gt;
+  &lt;a href="admin.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;&lt;img src="images/clear.gif;jsessionid=997596270C106201D628A19BADDA4F99" width="56" height="42" border="0" class="admin"/&gt;&lt;/a&gt;
+  &lt;a href="index.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;&lt;img src="images/logo.gif;jsessionid=997596270C106201D628A19BADDA4F99" alt="ParaBank" width="136" height="31" border="0" class="logo" title="ParaBank"/&gt;&lt;/a&gt;
+  &lt;p class="caption"&gt;Experience the difference&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="headerPanel" style="background: url(images/header-main.jpg;jsessionid=997596270C106201D628A19BADDA4F99) 0 0 no-repeat;"&gt;
+  
+
+
+&lt;ul class="leftmenu"&gt;
+  &lt;li class="Solutions"&gt;Solutions&lt;/li&gt;
+  &lt;li&gt;&lt;a href="about.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="services.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Services&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="admin.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Admin Page&lt;/a&gt;&lt;/li&gt;
+  
+&lt;/ul&gt;
+  
+
+
+&lt;ul class="button"&gt;
+  &lt;li class="home"&gt;&lt;a href="index.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;home&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="aboutus"&gt;&lt;a href="about.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;about&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="contact"&gt;&lt;a href="contact.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+				
+				
+			
+			&lt;div id="bodyPanel"&gt;
+				&lt;div id="leftPanel"&gt;
+					
+						
+							
+
+
+&lt;h2&gt;Customer Login&lt;/h2&gt;
+&lt;div id="loginPanel"&gt;
+  &lt;form name="login" action="login.htm;jsessionid=997596270C106201D628A19BADDA4F99" method="POST"&gt;
+    
+    &lt;p&gt;&lt;b&gt;Username&lt;/b&gt;&lt;/p&gt;
+    &lt;div class="login"&gt;&lt;input type="text" class="input" name="username"/&gt;&lt;/div&gt;
+    &lt;p&gt;&lt;b&gt;Password&lt;/b&gt;&lt;/p&gt;
+    &lt;div class="login"&gt;&lt;input type="password" class="input" name="password"/&gt;&lt;/div&gt;
+    &lt;div class="login"&gt;&lt;input type="submit" class="button" value="Log In"/&gt;&lt;/div&gt;
+  &lt;/form&gt;
+  &lt;p&gt;&lt;a href="lookup.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Forgot login info?&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href="register.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Register&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+						
+						
+					
+				&lt;/div&gt;
+				&lt;div id="rightPanel"&gt;
+					
+
+
+&lt;h1 class="title"&gt;Error!&lt;/h1&gt;
+
+
+
+&lt;p class="error"&gt;An internal error has occurred and has been logged.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+
+
+&lt;div id="footermainPanel"&gt;
+  &lt;div id="footerPanel"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="index.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Home&lt;/a&gt;| &lt;/li&gt;
+      &lt;li&gt;&lt;a href="about.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;About Us&lt;/a&gt;| &lt;/li&gt;
+      &lt;li&gt;&lt;a href="services.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Services&lt;/a&gt;| &lt;/li&gt;
+      &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;| &lt;/li&gt;
+      &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;| &lt;/li&gt;
+      &lt;li&gt;&lt;a href="http://forums.parasoft.com/"&gt;Forum&lt;/a&gt;| &lt;/li&gt;
+      &lt;li&gt;&lt;a href="sitemap.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Site Map&lt;/a&gt;| &lt;/li&gt;
+      &lt;li&gt;&lt;a href="contact.htm;jsessionid=997596270C106201D628A19BADDA4F99"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p class="copyright"&gt;&amp;copy; Parasoft. All rights reserved.&lt;/p&gt;
+    &lt;ul class="visit"&gt;
+      &lt;li&gt;Visit us at:&lt;/li&gt;
+      &lt;li&gt;&lt;a href="http://www.parasoft.com/" target="_blank"&gt;www.parasoft.com&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+ 
  </msg>
-<msg time="2026-06-20T14:16:44.611818" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-06-20T14:52:20.561382" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-06-20T14:16:44.611929" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-06-20T14:52:20.561683" level="INFO">${response} = &lt;Response [500]&gt;</msg>
 <var>${response}</var>
 <arg>parabank</arg>
 <arg>/customers/${customerId}/accounts</arg>
 <arg>headers=${headers}</arg>
 <arg>expected_status=any</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.152741" elapsed="0.459207"/>
+<status status="PASS" start="2026-06-20T14:51:28.370095" elapsed="52.191633"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-06-20T14:16:44.612577" elapsed="0.000086"/>
+<status status="PASS" start="2026-06-20T14:52:20.563424" elapsed="0.000170"/>
 </return>
-<msg time="2026-06-20T14:16:44.612842" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2026-06-20T14:52:20.563977" level="INFO">${response} = &lt;Response [500]&gt;</msg>
 <var>${response}</var>
 <arg>${CUSTOMER_ID}</arg>
-<status status="PASS" start="2026-06-20T14:16:44.151957" elapsed="0.460903"/>
+<status status="PASS" start="2026-06-20T14:51:28.369107" elapsed="52.194937"/>
 </kw>
 <kw name="Verify Response Code" owner="api_keywords">
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-06-20T14:16:44.613965" level="INFO">Argument types are:
+<msg time="2026-06-20T14:52:20.567095" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
+<msg time="2026-06-20T14:52:20.567276" level="FAIL">500 != 200</msg>
 <arg>${response.status_code}</arg>
 <arg>${code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.613609" elapsed="0.000401"/>
+<status status="FAIL" start="2026-06-20T14:52:20.566319" elapsed="0.001252">500 != 200</status>
 </kw>
 <arg>${response}</arg>
 <arg>200</arg>
-<status status="PASS" start="2026-06-20T14:16:44.613378" elapsed="0.001078"/>
+<status status="FAIL" start="2026-06-20T14:52:20.565787" elapsed="0.002917">500 != 200</status>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.614589" elapsed="0.000376"/>
+<status status="NOT RUN" start="2026-06-20T14:52:20.569047" elapsed="0.000068"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${response.text}</arg>
 <arg>${ACCOUNT_ID}</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2026-06-20T14:16:44.615096" elapsed="0.000300"/>
+<status status="NOT RUN" start="2026-06-20T14:52:20.569400" elapsed="0.000104"/>
 </kw>
 <doc>Validate Account Exists via API</doc>
 <tag>api</tag>
-<status status="PASS" start="2026-06-20T14:16:44.151565" elapsed="0.463961"/>
+<status status="FAIL" start="2026-06-20T14:51:28.368685" elapsed="52.201354">500 != 200</status>
 </test>
-<status status="PASS" start="2026-06-20T14:16:43.923967" elapsed="0.692057"/>
+<status status="FAIL" start="2026-06-20T14:51:28.197396" elapsed="52.374878"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:16:43.923021" elapsed="0.694387"/>
+<status status="FAIL" start="2026-06-20T14:51:28.195962" elapsed="52.381428"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:16:43.913290" elapsed="0.704390"/>
+<status status="FAIL" start="2026-06-20T14:51:28.183850" elapsed="52.394236"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">api</stat>
+<stat pass="0" fail="1" skip="0">api</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="API">Tests.API</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC-API-01">Tests.API.TC-API-01</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="API">Tests.API</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC-API-01">Tests.API.TC-API-01</stat>
 </suite>
 </statistics>
 <errors>

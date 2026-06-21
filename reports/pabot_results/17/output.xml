@@ -1,265 +1,356 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:17:13.157719" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:52:39.028281" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="NEGATIVE" source="D:\parabank\tests\NEGATIVE">
 <suite id="s1-s1-s1" name="TC-NEG-04" source="D:\parabank\tests\NEGATIVE\TC-NEG-04.robot">
 <kw name="Load Environment" owner="common_keywords" type="SETUP">
 <kw name="Load Env" owner="environment">
 <arg>${ENV}</arg>
-<status status="PASS" start="2026-06-20T14:17:13.474791" elapsed="0.001120"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.361906" elapsed="0.000092"/>
 </kw>
 <kw name="Get Env" owner="environment">
-<msg time="2026-06-20T14:17:13.476425" level="INFO">${url} = https://parabank.parasoft.com</msg>
 <var>${url}</var>
 <arg>baseurl</arg>
-<status status="PASS" start="2026-06-20T14:17:13.476206" elapsed="0.000254"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.362182" elapsed="0.000056"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-06-20T14:17:13.477850" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
 <arg>${BASE_URL}</arg>
 <arg>${url}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-06-20T14:17:13.477038" elapsed="0.000920"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.362397" elapsed="0.000062"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-06-20T14:17:13.478818" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
 <arg>Loaded BASE_URL=${BASE_URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-06-20T14:17:13.478659" elapsed="0.000196"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.362602" elapsed="0.000075"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:17:13.474205" elapsed="0.005264"/>
+<status status="PASS" start="2026-06-20T14:52:39.361448" elapsed="0.001315"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-NEG-04 Transfer Amount Greater Than Balance" line="11">
 <kw name="Open Application" owner="common_keywords" type="SETUP">
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T14:17:13.482019" level="INFO">Length is 29.</msg>
 <arg>${BASE_URL}</arg>
 <arg>Base URL must not be empty. Please set it in config/env.yaml</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-06-20T14:17:13.481375" elapsed="0.000691"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.363399" elapsed="0.000083"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:13.482798" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-20T14:17:13.482605" elapsed="4.020899"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.363655" elapsed="0.000063"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-06-20T14:17:17.505305" elapsed="0.036940"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.363831" elapsed="0.000037"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-20T14:17:22.544398" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-20T14:17:17.542778" elapsed="5.001788"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.363970" elapsed="0.000043"/>
 </kw>
 <doc>Opens the application</doc>
-<status status="PASS" start="2026-06-20T14:17:13.480761" elapsed="9.068144"/>
+<status status="PASS" start="2026-06-20T14:52:39.363259" elapsed="0.000828"/>
 </kw>
 <kw name="Ensure User Is Logged In" owner="common_keywords">
 <kw name="Login User" owner="login">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:22.550862" level="INFO">Typing text 'john' into text field 'xpath=//input[@name="username"]'.</msg>
 <arg>${login_username}</arg>
 <arg>john</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:22.550301" elapsed="0.172148"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.364495" elapsed="0.000059"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:22.733984" level="INFO">Typing text 'demo' into text field 'xpath=//input[@name="password"]'.</msg>
 <arg>${login_password}</arg>
 <arg>demo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:22.729284" elapsed="0.170653"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.364697" elapsed="0.000057"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:22.902890" level="INFO">Clicking button 'xpath=//input[@value="Log In"]'.</msg>
 <arg>${login_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:22.902185" elapsed="1.027216"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.364865" elapsed="0.000048"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:17:22.550011" elapsed="1.383292"/>
+<status status="PASS" start="2026-06-20T14:52:39.364387" elapsed="0.000598"/>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Accounts Overview</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.934492" elapsed="0.049744"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.365188" elapsed="0.000099"/>
 </kw>
-<msg time="2026-06-20T14:17:23.984668" level="INFO">${login_success} = True</msg>
 <var>${login_success}</var>
 <arg>Wait Until Page Contains</arg>
 <arg>Accounts Overview</arg>
 <arg>10s</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.933993" elapsed="0.050749"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.365094" elapsed="0.000276"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${login_success}">
 <kw name="Go To" owner="SeleniumLibrary">
 <arg>${BASE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" start="2026-06-20T14:17:23.987038" elapsed="0.000069"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.365599" elapsed="0.000046"/>
 </kw>
 <kw name="Register User" owner="register">
-<status status="NOT RUN" start="2026-06-20T14:17:23.987446" elapsed="0.000057"/>
+<kw name="Get Location" owner="SeleniumLibrary">
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.365946" elapsed="0.000038"/>
 </kw>
-<status status="NOT RUN" start="2026-06-20T14:17:23.986622" elapsed="0.001426"/>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current URL: ${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.366092" elapsed="0.000051"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${register_link}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.366260" elapsed="0.000085"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${register_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.366456" elapsed="0.000045"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Mridul</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.366622" elapsed="0.000051"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Agarwal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.366782" elapsed="0.000050"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${address}</arg>
+<arg>6/335,SFS,Agarwal Farm</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.366939" elapsed="0.000047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${city}</arg>
+<arg>Jaipur</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.367100" elapsed="0.000047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${state}</arg>
+<arg>Rajasthan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.367252" elapsed="0.000048"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${zipcode}</arg>
+<arg>302020</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.367404" elapsed="0.000047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${phone}</arg>
+<arg>8740810000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.367554" elapsed="0.000053"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${ssn}</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.367870" elapsed="0.000055"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>Mridul1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.368064" elapsed="0.000054"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>manav</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.368221" elapsed="0.000047"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${confirm_password}</arg>
+<arg>manav</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.368374" elapsed="0.000097"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${register_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.368612" elapsed="0.000076"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.368887" elapsed="0.000054"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>This username already exists.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.369146" elapsed="0.000044"/>
+</kw>
+<var>${already_exists}</var>
+<arg>Page Should Contain</arg>
+<arg>This username already exists.</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.369057" elapsed="0.000209"/>
+</kw>
+<if>
+<branch type="IF" condition="${already_exists}">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Already Registered!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.369450" elapsed="0.000045"/>
+</kw>
+<status status="PASS" start="2026-06-20T14:52:39.369375" elapsed="0.000192"/>
 </branch>
-<status status="PASS" start="2026-06-20T14:17:23.986554" elapsed="0.001654"/>
+<branch type="ELSE">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your account was created successfully. You are now logged in.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.369740" elapsed="0.000048"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>User registered successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-06-20T14:52:39.369895" elapsed="0.000042"/>
+</kw>
+<status status="PASS" start="2026-06-20T14:52:39.369666" elapsed="0.000341"/>
+</branch>
+<status status="PASS" start="2026-06-20T14:52:39.369360" elapsed="0.000714"/>
 </if>
-<status status="PASS" start="2026-06-20T14:17:22.549600" elapsed="1.438694"/>
+<status status="PASS" start="2026-06-20T14:52:39.365831" elapsed="0.004271"/>
+</kw>
+<status status="PASS" start="2026-06-20T14:52:39.365487" elapsed="0.004682"/>
+</branch>
+<status status="PASS" start="2026-06-20T14:52:39.365468" elapsed="0.004768"/>
+</if>
+<status status="PASS" start="2026-06-20T14:52:39.364257" elapsed="0.005998"/>
 </kw>
 <kw name="Submit Transfer With Amount Greater Than Balance" owner="negative">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:23.989660" level="INFO">Clicking element 'xpath=//a[contains(@href,'transfer.htm')]'.</msg>
 <arg>${transfer_funds_link}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.989170" elapsed="0.581499"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.370520" elapsed="0.000052"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Transfer Funds</arg>
 <arg>10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:24.572000" elapsed="0.018931"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.370717" elapsed="0.000080"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${transfer_from_dropdown}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:24.591867" elapsed="0.023254"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.370913" elapsed="0.000080"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>${transfer_to_dropdown}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:24.616006" elapsed="0.014029"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.371107" elapsed="0.000071"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
 <kw name="Verify From Dropdown Has Options" owner="negative">
 <kw name="Get List Items" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:24.685477" level="INFO">${items} = []</msg>
 <var>${items}</var>
 <arg>${transfer_from_dropdown}</arg>
 <doc>Returns all labels or values of selection list ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:24.632003" elapsed="0.053621"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.371526" elapsed="0.000051"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>From dropdown options: ${items}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:17:24.687702" elapsed="0.001401"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.371711" elapsed="0.000050"/>
 </kw>
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T14:17:24.689733" level="INFO">Length is 0.</msg>
-<msg time="2026-06-20T14:17:24.690056" level="FAIL">'[]' should not be empty.</msg>
 <arg>${items}</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="FAIL" start="2026-06-20T14:17:24.689405" elapsed="0.001076">'[]' should not be empty.</status>
+<status status="NOT RUN" start="2026-06-20T14:52:39.371866" elapsed="0.000196"/>
 </kw>
-<status status="FAIL" start="2026-06-20T14:17:24.631345" elapsed="0.063030">'[]' should not be empty.</status>
-</kw>
-<kw name="Verify From Dropdown Has Options" owner="negative">
-<kw name="Get List Items" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:26.537227" level="INFO">${items} = ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '13566', '13677', '13899', '14454', '14565', '14676', '15009', '15342', '15786', '15897', '16341', '16563', '...</msg>
-<var>${items}</var>
-<arg>${transfer_from_dropdown}</arg>
-<doc>Returns all labels or values of selection list ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:25.696380" elapsed="0.840988"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>From dropdown options: ${items}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.539458" elapsed="0.000423"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T14:17:26.540412" level="INFO">Length is 64.</msg>
-<arg>${items}</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.540208" elapsed="0.000261"/>
-</kw>
-<status status="PASS" start="2026-06-20T14:17:25.695444" elapsed="0.847528"/>
+<status status="PASS" start="2026-06-20T14:52:39.371409" elapsed="0.001052"/>
 </kw>
 <arg>10s</arg>
 <arg>1s</arg>
 <arg>Verify From Dropdown Has Options</arg>
 <doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-06-20T14:17:24.630571" elapsed="1.912840"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.371301" elapsed="0.001291"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:26.544488" level="INFO">Typing text '999999' into text field 'xpath=//input[@id='amount']'.</msg>
 <arg>${transfer_amount_input}</arg>
 <arg>999999</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.543963" elapsed="0.121834"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.372803" elapsed="0.000108"/>
 </kw>
 <kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:26.669213" level="INFO">Selecting options from selection list 'id=fromAccountId' by index 0.</msg>
 <arg>${transfer_from_dropdown}</arg>
 <arg>0</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.668275" elapsed="0.095902"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.373102" elapsed="0.000127"/>
 </kw>
 <kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:26.767704" level="INFO">Selecting options from selection list 'id=toAccountId' by index 0.</msg>
 <arg>${transfer_to_dropdown}</arg>
 <arg>0</arg>
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.767012" elapsed="0.075610"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.373417" elapsed="0.000085"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:26.845564" level="INFO">Clicking element 'xpath=//input[@value='Transfer']'.</msg>
 <arg>${transfer_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.845098" elapsed="0.107969"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.373673" elapsed="0.000069"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Submitted transfer with amount 999999 (way above balance)</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.954374" elapsed="0.000423"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.373909" elapsed="0.000066"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:17:23.988565" elapsed="2.966597"/>
+<status status="PASS" start="2026-06-20T14:52:39.370397" elapsed="0.003691"/>
 </kw>
 <kw name="Verify Transfer Is Shown" owner="negative">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-20T14:17:28.957540" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-20T14:17:26.956258" elapsed="2.001478"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.374472" elapsed="0.000064"/>
 </kw>
 <kw name="Page Should Not Contain" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:29.327862" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-06-20T14:17:29.335870" level="FAIL">Page should not have contained text 'Error!'.</msg>
 <arg>Error!</arg>
 <doc>Verifies the current page does not contain ``text``.</doc>
-<status status="FAIL" start="2026-06-20T14:17:28.960242" elapsed="0.436761">Page should not have contained text 'Error!'.</status>
+<status status="NOT RUN" start="2026-06-20T14:52:39.374698" elapsed="0.000090"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Transfered correctly — Transfer appear</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2026-06-20T14:17:29.400226" elapsed="0.000169"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.374951" elapsed="0.000066"/>
 </kw>
-<status status="FAIL" start="2026-06-20T14:17:26.955753" elapsed="2.445186">Page should not have contained text 'Error!'.</status>
+<status status="PASS" start="2026-06-20T14:52:39.374302" elapsed="0.000862"/>
 </kw>
 <kw name="Close Application" owner="common_keywords" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-06-20T14:17:29.402342" elapsed="7.941225"/>
+<status status="NOT RUN" start="2026-06-20T14:52:39.375628" elapsed="0.000063"/>
 </kw>
 <doc>Closing the application</doc>
-<status status="PASS" start="2026-06-20T14:17:29.401696" elapsed="7.942233"/>
+<status status="PASS" start="2026-06-20T14:52:39.375406" elapsed="0.000400"/>
 </kw>
 <doc>Enter 999999 as amount</doc>
 <tag>negative</tag>
-<status status="FAIL" start="2026-06-20T14:17:13.479963" elapsed="23.864182">Page should not have contained text 'Error!'.</status>
+<status status="FAIL" start="2026-06-20T14:52:39.362864" elapsed="0.013062">User interrupted Pabot execution (Ctrl+C) when this test/suite was running. Unfortunately, there is no original data available.</status>
 </test>
-<status status="FAIL" start="2026-06-20T14:17:13.223752" elapsed="24.122725"/>
+<status status="FAIL" start="2026-06-20T14:52:39.100381" elapsed="0.277720"/>
 </suite>
-<status status="FAIL" start="2026-06-20T14:17:13.222845" elapsed="24.127107"/>
+<status status="FAIL" start="2026-06-20T14:52:39.099459" elapsed="0.282286"/>
 </suite>
-<status status="FAIL" start="2026-06-20T14:17:13.214192" elapsed="24.136259"/>
+<status status="FAIL" start="2026-06-20T14:52:39.090379" elapsed="0.291855"/>
 </suite>
 <statistics>
 <total>

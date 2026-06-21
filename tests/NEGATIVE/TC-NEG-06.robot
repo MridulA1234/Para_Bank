@@ -11,8 +11,7 @@ ${API_BASE}    https://parabank.parasoft.com/parabank/services/bank
 TC-NEG-06 Login API with Invalid Credentials
     [Documentation]    Call login API with wrong credentials — expect a non-200 response
     [Tags]    negative    API
-    [Setup]    NONE
-    [Teardown]    NONE
+
     Create Session    parabank    ${API_BASE}    verify=${False}
     ${response}=    GET On Session    parabank    /login/baduser_xyz/wrongpass123
     ...    expected_status=any

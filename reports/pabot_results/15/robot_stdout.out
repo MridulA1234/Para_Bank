@@ -5,18 +5,38 @@ Tests.NEGATIVE
 ==============================================================================
 Tests.NEGATIVE.TC-NEG-02
 ==============================================================================
-TC-NEG-02 Blank Transfer Amount :: Submit the transfer form withou... From dropdown options: []
-From dropdown options: ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '13566', '13677', '13899', '14454', '14565', '14676', '15009', '15342', '15786', '15897', '16341', '16563', '18117', '18228', '18339', '18450', '18561', '18672', '18783', '18894', '19005', '19116', '19227', '19338', '19449', '19560', '19671', '19893', '20004', '20115', '20226', '20337', '20448', '20559', '20670', '20781', '20892', '21003', '21336', '21558', '21669', '21780', '21891', '22002', '22113', '22224', '22335', '22446', '22557', '22668', '22779', '22890', '23001', '54321']
-Transfer correctly rejected � Transfer Complete did not appear
-| PASS |
+TC-NEG-02 Blank Transfer Amount :: Submit the transfer form withou... | FAIL |
+InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
 ------------------------------------------------------------------------------
-Tests.NEGATIVE.TC-NEG-02                                              | PASS |
-1 test, 1 passed, 0 failed
+Tests.NEGATIVE.TC-NEG-02                                              | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.NEGATIVE                                                        | PASS |
-1 test, 1 passed, 0 failed
+Tests.NEGATIVE                                                        | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests                                                                 | PASS |
-1 test, 1 passed, 0 failed
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\15\output.xml

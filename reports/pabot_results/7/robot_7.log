@@ -1,22 +1,28 @@
-2026-06-20 14:16:43.904380 ==============================================================================
-2026-06-20 14:16:43.923101 Tests
-2026-06-20 14:16:43.923145 ==============================================================================
-2026-06-20 14:16:43.923171 Tests.API
-2026-06-20 14:16:43.924017 ==============================================================================
-2026-06-20 14:16:44.143416 Tests.API.TC-API-01
-2026-06-20 14:16:44.149096 ==============================================================================
-2026-06-20 14:16:44.559976 TC-API-01 Validate Account Exists via API :: Validate Account Exis... [{"id":12345,"customerId":12212,"type":"CHECKING","balance":-10001006373.50},{"id":12456,"customerId":12212,"type":"CHECKING","balance":285.95},{"id":12567,"customerId":12212,"type":"CHECKING","balance":1000099.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":-2999715.90},{"id":13566,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":13677,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":13899,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":14454,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14565,"customerId":12212,"type":"SAVINGS","balance":10000000099.00},{"id":14676,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":15009,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":15342,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":15786,"customerId":12212,"type":"SAVINGS","balance":0.00},{"id":15897,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":16341,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":16563,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":18117,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18228,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18339,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":18450,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":18561,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18672,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18783,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":18894,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19005,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19116,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19227,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":19338,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":19449,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19560,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19671,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":19893,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20004,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20115,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20226,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20337,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20448,"customerId":12212,"type":"SAVINGS","balance":200.00},{"id":20559,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":20670,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20781,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":20892,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21003,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":21336,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21558,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21669,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":21780,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":21891,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":22002,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
-2026-06-20 14:16:44.559976 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-2026-06-20 14:16:44.615536 | PASS |
-2026-06-20 14:16:44.615536   warnings.warn(
-2026-06-20 14:16:44.615984 ------------------------------------------------------------------------------
-2026-06-20 14:16:44.616006 Tests.API.TC-API-01                                                   | PASS |
-2026-06-20 14:16:44.617378 1 test, 1 passed, 0 failed
-2026-06-20 14:16:44.617397 ==============================================================================
-2026-06-20 14:16:44.617410 Tests.API                                                             | PASS |
-2026-06-20 14:16:44.617662 1 test, 1 passed, 0 failed
-2026-06-20 14:16:44.617699 ==============================================================================
-2026-06-20 14:16:44.617716 Tests                                                                 | PASS |
-2026-06-20 14:16:44.617913 1 test, 1 passed, 0 failed
-2026-06-20 14:16:44.617958 ==============================================================================
-2026-06-20 14:16:44.617993 Output:  D:\parabank\reports\pabot_results\7\output.xml
+2026-06-20 14:51:28.138257 ==============================================================================
+2026-06-20 14:51:28.197376 Tests
+2026-06-20 14:51:28.197482 ==============================================================================
+2026-06-20 14:51:28.197520 Tests.API
+2026-06-20 14:51:28.197551 ==============================================================================
+2026-06-20 14:51:28.317530 Tests.API.TC-API-01
+2026-06-20 14:51:28.365343 ==============================================================================
+2026-06-20 14:52:20.525581 TC-API-01 Validate Account Exists via API :: Validate Account Exis... | FAIL |
+2026-06-20 14:52:20.525581 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-06-20 14:52:20.571960 500 != 200
+2026-06-20 14:52:20.571960   warnings.warn(
+2026-06-20 14:52:20.572104 ------------------------------------------------------------------------------
+2026-06-20 14:52:20.572104 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-06-20 14:52:20.572228 Tests.API.TC-API-01                                                   | FAIL |
+2026-06-20 14:52:20.572228   warnings.warn(
+2026-06-20 14:52:20.577239 1 test, 0 passed, 1 failed
+2026-06-20 14:52:20.577239 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-06-20 14:52:20.578489 ==============================================================================
+2026-06-20 14:52:20.578489   warnings.warn(
+2026-06-20 14:52:20.578990 Tests.API                                                             | FAIL |
+2026-06-20 14:52:20.578990 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-06-20 14:52:20.579054 1 test, 0 passed, 1 failed
+2026-06-20 14:52:20.579054   warnings.warn(
+2026-06-20 14:52:20.579108 ==============================================================================
+2026-06-20 14:52:20.579146 Tests                                                                 | FAIL |
+2026-06-20 14:52:20.579178 1 test, 0 passed, 1 failed
+2026-06-20 14:52:20.579208 ==============================================================================
+2026-06-20 14:52:20.579237 Output:  D:\parabank\reports\pabot_results\7\output.xml

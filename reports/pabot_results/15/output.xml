@@ -1,268 +1,304 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:17:12.058756" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:52:14.352073" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="NEGATIVE" source="D:\parabank\tests\NEGATIVE">
 <suite id="s1-s1-s1" name="TC-NEG-02" source="D:\parabank\tests\NEGATIVE\TC-NEG-02.robot">
 <kw name="Load Environment" owner="common_keywords" type="SETUP">
 <kw name="Load Env" owner="environment">
 <arg>${ENV}</arg>
-<status status="PASS" start="2026-06-20T14:17:12.420974" elapsed="0.001111"/>
+<status status="PASS" start="2026-06-20T14:52:14.673947" elapsed="0.000741"/>
 </kw>
 <kw name="Get Env" owner="environment">
-<msg time="2026-06-20T14:17:12.422473" level="INFO">${url} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:52:14.675055" level="INFO">${url} = https://parabank.parasoft.com</msg>
 <var>${url}</var>
 <arg>baseurl</arg>
-<status status="PASS" start="2026-06-20T14:17:12.422334" elapsed="0.000166"/>
+<status status="PASS" start="2026-06-20T14:52:14.674900" elapsed="0.000183"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-06-20T14:17:12.423742" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:52:14.676243" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
 <arg>${BASE_URL}</arg>
 <arg>${url}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-06-20T14:17:12.423131" elapsed="0.000648"/>
+<status status="PASS" start="2026-06-20T14:52:14.675600" elapsed="0.000680"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-06-20T14:17:12.424463" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
+<msg time="2026-06-20T14:52:14.676909" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
 <arg>Loaded BASE_URL=${BASE_URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-06-20T14:17:12.424253" elapsed="0.000243"/>
+<status status="PASS" start="2026-06-20T14:52:14.676779" elapsed="0.000160"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:17:12.420017" elapsed="0.004863"/>
+<status status="PASS" start="2026-06-20T14:52:14.673434" elapsed="0.004039"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-NEG-02 Blank Transfer Amount" line="11">
 <kw name="Open Application" owner="common_keywords" type="SETUP">
 <kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T14:17:12.425966" level="INFO">Length is 29.</msg>
+<msg time="2026-06-20T14:52:14.678371" level="INFO">Length is 29.</msg>
 <arg>${BASE_URL}</arg>
 <arg>Base URL must not be empty. Please set it in config/env.yaml</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-06-20T14:17:12.425653" elapsed="0.000349"/>
+<status status="PASS" start="2026-06-20T14:52:14.678244" elapsed="0.000161"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:12.427050" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
+<msg time="2026-06-20T14:52:14.679142" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com'.</msg>
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-20T14:17:12.426869" elapsed="3.756520"/>
+<status status="PASS" start="2026-06-20T14:52:14.678947" elapsed="2.691164"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-06-20T14:17:16.184121" elapsed="0.037783"/>
+<status status="PASS" start="2026-06-20T14:52:17.371353" elapsed="0.034300"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-20T14:17:21.223711" level="INFO">Slept 5 seconds.</msg>
+<msg time="2026-06-20T14:52:22.407328" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-20T14:17:16.222580" elapsed="5.001426"/>
+<status status="PASS" start="2026-06-20T14:52:17.406211" elapsed="5.001240"/>
 </kw>
 <doc>Opens the application</doc>
-<status status="PASS" start="2026-06-20T14:17:12.425477" elapsed="8.801651"/>
+<status status="PASS" start="2026-06-20T14:52:14.678067" elapsed="7.730208"/>
 </kw>
 <kw name="Ensure User Is Logged In" owner="common_keywords">
 <kw name="Login User" owner="login">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:21.229019" level="INFO">Typing text 'john' into text field 'xpath=//input[@name="username"]'.</msg>
+<msg time="2026-06-20T14:52:22.409461" level="INFO">Typing text 'john' into text field 'xpath=//input[@name="username"]'.</msg>
+<msg time="2026-06-20T14:52:22.491581" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c007726]
+	chromedriver!(No symbol) [0x7ff79c053083]
+	chromedriver!(No symbol) [0x7ff79c08a2d2]
+	chromedriver!(No symbol) [0x7ff79c0840d2]
+	chromedriver!(No symbol) [0x7ff79c083892]
+	chromedriver!(No symbol) [0x7ff79bfd03e5]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!(No symbol) [0x7ff79bfcf188]
+	chromedriver!GetHandleVerifier [0x7ff79cc77b58+7c84d8]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+</msg>
+<msg time="2026-06-20T14:52:22.491917" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+</msg>
 <arg>${login_username}</arg>
 <arg>john</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:21.228534" elapsed="0.153638"/>
+<status status="FAIL" start="2026-06-20T14:52:22.409143" elapsed="0.173839">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:21.384478" level="INFO">Typing text 'demo' into text field 'xpath=//input[@name="password"]'.</msg>
 <arg>${login_password}</arg>
 <arg>demo</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:21.383895" elapsed="0.138253"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.584099" elapsed="0.000078"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:21.524209" level="INFO">Clicking button 'xpath=//input[@value="Log In"]'.</msg>
 <arg>${login_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:21.523807" elapsed="0.968196"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.584392" elapsed="0.000040"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:17:21.228138" elapsed="1.265319"/>
+<status status="FAIL" start="2026-06-20T14:52:22.408948" elapsed="0.175731">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+</status>
 </kw>
 <kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Accounts Overview</arg>
-<arg>10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:22.494275" elapsed="0.052771"/>
-</kw>
-<msg time="2026-06-20T14:17:22.547414" level="INFO">${login_success} = True</msg>
 <var>${login_success}</var>
 <arg>Wait Until Page Contains</arg>
 <arg>Accounts Overview</arg>
 <arg>10s</arg>
 <doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<status status="PASS" start="2026-06-20T14:17:22.493871" elapsed="0.053582"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.584927" elapsed="0.000053"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${login_success}">
 <kw name="Go To" owner="SeleniumLibrary">
 <arg>${BASE_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" start="2026-06-20T14:17:22.549307" elapsed="0.000074"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.585289" elapsed="0.000041"/>
 </kw>
 <kw name="Register User" owner="register">
-<status status="NOT RUN" start="2026-06-20T14:17:22.549729" elapsed="0.000069"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.585654" elapsed="0.000055"/>
 </kw>
-<status status="NOT RUN" start="2026-06-20T14:17:22.548498" elapsed="0.001426"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.585158" elapsed="0.000655"/>
 </branch>
-<status status="PASS" start="2026-06-20T14:17:22.548413" elapsed="0.001644"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.585126" elapsed="0.000797"/>
 </if>
-<status status="PASS" start="2026-06-20T14:17:21.227733" elapsed="1.322394"/>
+<status status="FAIL" start="2026-06-20T14:52:22.408632" elapsed="0.177393">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+</status>
 </kw>
 <kw name="Submit Blank Transfer Amount" owner="negative">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:22.551109" level="INFO">Clicking element 'xpath=//a[contains(@href,'transfer.htm')]'.</msg>
-<arg>${transfer_funds_link}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:22.550821" elapsed="0.496472"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Transfer Funds</arg>
-<arg>10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.052114" elapsed="0.081244"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${transfer_from_dropdown}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.134166" elapsed="0.017798"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${transfer_to_dropdown}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.152732" elapsed="0.031805"/>
-</kw>
-<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
-<kw name="Verify From Dropdown Has Options" owner="negative">
-<kw name="Get List Items" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:23.256767" level="INFO">${items} = []</msg>
-<var>${items}</var>
-<arg>${transfer_from_dropdown}</arg>
-<doc>Returns all labels or values of selection list ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.187167" elapsed="0.069734"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>From dropdown options: ${items}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.259254" elapsed="0.001023"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T14:17:23.261197" level="INFO">Length is 0.</msg>
-<msg time="2026-06-20T14:17:23.261403" level="FAIL">'[]' should not be empty.</msg>
-<arg>${items}</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="FAIL" start="2026-06-20T14:17:23.260904" elapsed="0.000852">'[]' should not be empty.</status>
-</kw>
-<status status="FAIL" start="2026-06-20T14:17:23.186523" elapsed="0.076790">'[]' should not be empty.</status>
-</kw>
-<kw name="Verify From Dropdown Has Options" owner="negative">
-<kw name="Get List Items" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:25.455493" level="INFO">${items} = ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '13566', '13677', '13899', '14454', '14565', '14676', '15009', '15342', '15786', '15897', '16341', '16563', '...</msg>
-<var>${items}</var>
-<arg>${transfer_from_dropdown}</arg>
-<doc>Returns all labels or values of selection list ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:24.267537" elapsed="1.188080"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>From dropdown options: ${items}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:17:25.457575" elapsed="0.000523"/>
-</kw>
-<kw name="Should Not Be Empty" owner="BuiltIn">
-<msg time="2026-06-20T14:17:25.458606" level="INFO">Length is 64.</msg>
-<arg>${items}</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<status status="PASS" start="2026-06-20T14:17:25.458409" elapsed="0.000250"/>
-</kw>
-<status status="PASS" start="2026-06-20T14:17:24.266262" elapsed="1.193772"/>
-</kw>
-<arg>10s</arg>
-<arg>1s</arg>
-<arg>Verify From Dropdown Has Options</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<status status="PASS" start="2026-06-20T14:17:23.185380" elapsed="2.274811"/>
-</kw>
-<kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:25.460628" level="INFO">Selecting options from selection list 'id=fromAccountId' by index 0.</msg>
-<arg>${transfer_from_dropdown}</arg>
-<arg>0</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2026-06-20T14:17:25.460396" elapsed="0.079692"/>
-</kw>
-<kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:25.541878" level="INFO">Selecting options from selection list 'id=toAccountId' by index 0.</msg>
-<arg>${transfer_to_dropdown}</arg>
-<arg>0</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2026-06-20T14:17:25.541500" elapsed="0.066563"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:25.610091" level="INFO">Clicking element 'xpath=//input[@value='Transfer']'.</msg>
-<arg>${transfer_button}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-20T14:17:25.609551" elapsed="0.117336"/>
-</kw>
-<status status="PASS" start="2026-06-20T14:17:22.550382" elapsed="3.177858"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.586242" elapsed="0.000043"/>
 </kw>
 <kw name="Verify Transfer Error Is Shown" owner="negative">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-20T14:17:27.732952" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-20T14:17:25.729109" elapsed="2.004136"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2026-06-20T14:17:27.914834" level="INFO">Current page contains text 'Error!'.</msg>
-<arg>Error!</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2026-06-20T14:17:27.762166" elapsed="0.152907"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Transfer correctly rejected — Transfer Complete did not appear</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:17:27.916993" elapsed="0.000610"/>
-</kw>
-<status status="PASS" start="2026-06-20T14:17:25.728680" elapsed="2.189393"/>
+<status status="NOT RUN" start="2026-06-20T14:52:22.586449" elapsed="0.000037"/>
 </kw>
 <kw name="Close Application" owner="common_keywords" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2026-06-20T14:17:27.922156" elapsed="9.132443"/>
+<status status="PASS" start="2026-06-20T14:52:22.587801" elapsed="2.043497"/>
 </kw>
 <doc>Closing the application</doc>
-<status status="PASS" start="2026-06-20T14:17:27.921637" elapsed="9.133452"/>
+<status status="PASS" start="2026-06-20T14:52:22.586784" elapsed="2.044942"/>
 </kw>
 <doc>Submit the transfer form without entering an amount and check for validation</doc>
 <tag>negative</tag>
 <tag>UI</tag>
-<status status="PASS" start="2026-06-20T14:17:12.424999" elapsed="24.630335"/>
+<status status="FAIL" start="2026-06-20T14:52:14.677604" elapsed="9.954355">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+</status>
 </test>
-<status status="PASS" start="2026-06-20T14:17:12.126505" elapsed="24.931722"/>
+<status status="FAIL" start="2026-06-20T14:52:14.418383" elapsed="10.216657"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:17:12.125380" elapsed="24.936363"/>
+<status status="FAIL" start="2026-06-20T14:52:14.417147" elapsed="10.221282"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:17:12.115728" elapsed="24.946500"/>
+<status status="FAIL" start="2026-06-20T14:52:14.407320" elapsed="10.231672"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">negative</stat>
-<stat pass="1" fail="0" skip="0">UI</stat>
+<stat pass="0" fail="1" skip="0">negative</stat>
+<stat pass="0" fail="1" skip="0">UI</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="NEGATIVE">Tests.NEGATIVE</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC-NEG-02">Tests.NEGATIVE.TC-NEG-02</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="NEGATIVE">Tests.NEGATIVE</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC-NEG-02">Tests.NEGATIVE.TC-NEG-02</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2026-06-20T14:52:22.491581" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c007726]
+	chromedriver!(No symbol) [0x7ff79c053083]
+	chromedriver!(No symbol) [0x7ff79c08a2d2]
+	chromedriver!(No symbol) [0x7ff79c0840d2]
+	chromedriver!(No symbol) [0x7ff79c083892]
+	chromedriver!(No symbol) [0x7ff79bfd03e5]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!(No symbol) [0x7ff79bfcf188]
+	chromedriver!GetHandleVerifier [0x7ff79cc77b58+7c84d8]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+</msg>
 </errors>
 </robot>

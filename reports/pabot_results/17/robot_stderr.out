@@ -1,0 +1,24 @@
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+

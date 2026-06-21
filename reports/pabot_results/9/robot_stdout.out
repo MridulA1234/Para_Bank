@@ -5,16 +5,16 @@ Tests.API
 ==============================================================================
 Tests.API.TC-API-03
 ==============================================================================
-TC-API-03 Execute Fund Transfer Via API :: Verify fund transfer API   Successfully transferred $150 from account #13344 to account #13455
-| PASS |
+TC-API-03 Execute Fund Transfer Via API :: Verify fund transfer API   | FAIL |
+429 != 200
 ------------------------------------------------------------------------------
-Tests.API.TC-API-03                                                   | PASS |
-1 test, 1 passed, 0 failed
+Tests.API.TC-API-03                                                   | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests.API                                                             | PASS |
-1 test, 1 passed, 0 failed
+Tests.API                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Tests                                                                 | PASS |
-1 test, 1 passed, 0 failed
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\9\output.xml

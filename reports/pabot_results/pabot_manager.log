@@ -1,87 +1,276 @@
 [INFO]    Initialized logging in reports\pabot_results
 [INFO]    Robot Framework remote server at 127.0.0.1:8270 started.
-[DEBUG]   Storing .pabotsuitenames file
-[DEBUG]   2026-06-20 14:16:13.905293 [PID:48996] [0] [ID:2] EXECUTING Tests.01 UI.TC-UI-03
-[DEBUG]   2026-06-20 14:16:13.906762 [PID:5168] [4] [ID:1] EXECUTING Tests.01 UI.TC-UI-02
-[DEBUG]   2026-06-20 14:16:13.908710 [PID:39224] [3] [ID:3] EXECUTING Tests.01 UI.TC-UI-04
-[DEBUG]   2026-06-20 14:16:13.909265 [PID:32532] [2] [ID:0] EXECUTING Tests.01 UI.TC-UI-01
-[DEBUG]   2026-06-20 14:16:13.913740 [PID:45584] [1] [ID:4] EXECUTING Tests.01 UI.TC-UI-05
-[DEBUG]   2026-06-20 14:16:18.966654 [PID:39224] [3] [ID:3] still running Tests.01 UI.TC-UI-04 after 5.0s
-[DEBUG]   2026-06-20 14:16:19.007724 [PID:45584] [1] [ID:4] still running Tests.01 UI.TC-UI-05 after 5.0s
-[DEBUG]   2026-06-20 14:16:19.011718 [PID:48996] [0] [ID:2] still running Tests.01 UI.TC-UI-03 after 5.0s
-[DEBUG]   2026-06-20 14:16:19.036277 [PID:5168] [4] [ID:1] still running Tests.01 UI.TC-UI-02 after 5.0s
-[DEBUG]   2026-06-20 14:16:19.054353 [PID:32532] [2] [ID:0] still running Tests.01 UI.TC-UI-01 after 5.0s
-[DEBUG]   2026-06-20 14:16:29.208517 [PID:5168] [4] [ID:1] still running Tests.01 UI.TC-UI-02 after 15.0s
-[DEBUG]   2026-06-20 14:16:29.326921 [PID:32532] [2] [ID:0] still running Tests.01 UI.TC-UI-01 after 15.0s
-[DEBUG]   2026-06-20 14:16:29.329800 [PID:39224] [3] [ID:3] still running Tests.01 UI.TC-UI-04 after 15.0s
-[DEBUG]   2026-06-20 14:16:29.430397 [PID:45584] [1] [ID:4] still running Tests.01 UI.TC-UI-05 after 15.0s
-[DEBUG]   2026-06-20 14:16:29.430671 [PID:48996] [0] [ID:2] still running Tests.01 UI.TC-UI-03 after 15.0s
-[INFO]    2026-06-20 14:16:35.697250 [PID:5168] [4] [ID:1] PASSED Tests.01 UI.TC-UI-02 in 21.8 seconds
-[DEBUG]   2026-06-20 14:16:35.707270 [PID:52204] [0] [ID:5] EXECUTING Tests.01 UI.TC-UI-06
-[DEBUG]   2026-06-20 14:16:40.775012 [PID:52204] [0] [ID:5] still running Tests.01 UI.TC-UI-06 after 5.0s
-[INFO]    2026-06-20 14:16:43.461340 [PID:48996] [0] [ID:2] PASSED Tests.01 UI.TC-UI-03 in 29.6 seconds
-[INFO]    2026-06-20 14:16:43.462342 [PID:32532] [2] [ID:0] PASSED Tests.01 UI.TC-UI-01 in 29.6 seconds
-[DEBUG]   2026-06-20 14:16:43.475487 [PID:16516] [1] [ID:6] EXECUTING Tests.01 UI.TC-UI-07
-[DEBUG]   2026-06-20 14:16:43.476510 [PID:39272] [2] [ID:7] EXECUTING Tests.API.TC-API-01
-[INFO]    2026-06-20 14:16:43.574145 [PID:39224] [3] [ID:3] PASSED Tests.01 UI.TC-UI-04 in 29.7 seconds
-[DEBUG]   2026-06-20 14:16:43.616256 [PID:50816] [3] [ID:8] EXECUTING Tests.API.TC-API-02
-[INFO]    2026-06-20 14:16:43.999903 [PID:45584] [1] [ID:4] PASSED Tests.01 UI.TC-UI-05 in 30.1 seconds
-[DEBUG]   2026-06-20 14:16:44.019286 [PID:56096] [4] [ID:9] EXECUTING Tests.API.TC-API-03
-[INFO]    2026-06-20 14:16:44.817748 [PID:39272] [2] [ID:7] PASSED Tests.API.TC-API-01 in 1.3 seconds
-[DEBUG]   2026-06-20 14:16:44.830843 [PID:2376] [0] [ID:10] EXECUTING Tests.API.TC-API-04
-[INFO]    2026-06-20 14:16:44.880014 [PID:50816] [3] [ID:8] PASSED Tests.API.TC-API-02 in 1.3 seconds
-[DEBUG]   2026-06-20 14:16:44.889786 [PID:1984] [1] [ID:11] EXECUTING Tests.E2E.TC-E2E-01
-[INFO]    2026-06-20 14:16:45.237250 [PID:56096] [4] [ID:9] PASSED Tests.API.TC-API-03 in 1.2 seconds
-[DEBUG]   2026-06-20 14:16:45.247401 [PID:22216] [2] [ID:12] EXECUTING Tests.E2E.TC-E2E-02
-[INFO]    2026-06-20 14:16:46.299873 [PID:2376] [0] [ID:10] PASSED Tests.API.TC-API-04 in 1.5 seconds
-[DEBUG]   2026-06-20 14:16:46.316397 [PID:28696] [3] [ID:13] EXECUTING Tests.E2E.TC-E2E-03
-[DEBUG]   2026-06-20 14:16:49.143843 [PID:16516] [1] [ID:6] still running Tests.01 UI.TC-UI-07 after 5.0s
-[DEBUG]   2026-06-20 14:16:50.579918 [PID:1984] [1] [ID:11] still running Tests.E2E.TC-E2E-01 after 5.0s
-[DEBUG]   2026-06-20 14:16:50.858171 [PID:22216] [2] [ID:12] still running Tests.E2E.TC-E2E-02 after 5.0s
-[DEBUG]   2026-06-20 14:16:51.571868 [PID:52204] [0] [ID:5] still running Tests.01 UI.TC-UI-06 after 15.0s
-[DEBUG]   2026-06-20 14:16:52.021442 [PID:28696] [3] [ID:13] still running Tests.E2E.TC-E2E-03 after 5.0s
-[DEBUG]   2026-06-20 14:16:59.851454 [PID:16516] [1] [ID:6] still running Tests.01 UI.TC-UI-07 after 15.0s
-[DEBUG]   2026-06-20 14:17:01.257259 [PID:1984] [1] [ID:11] still running Tests.E2E.TC-E2E-01 after 15.0s
-[DEBUG]   2026-06-20 14:17:01.467258 [PID:22216] [2] [ID:12] still running Tests.E2E.TC-E2E-02 after 15.0s
-[DEBUG]   2026-06-20 14:17:02.322299 [PID:28696] [3] [ID:13] still running Tests.E2E.TC-E2E-03 after 15.0s
-[INFO]    2026-06-20 14:17:02.936370 [PID:52204] [0] [ID:5] PASSED Tests.01 UI.TC-UI-06 in 27.2 seconds
-[DEBUG]   2026-06-20 14:17:02.958046 [PID:20832] [4] [ID:14] EXECUTING Tests.NEGATIVE.TC-NEG-01
-[DEBUG]   2026-06-20 14:17:07.990112 [PID:20832] [4] [ID:14] still running Tests.NEGATIVE.TC-NEG-01 after 5.0s
-[INFO]    2026-06-20 14:17:11.679536 [PID:22216] [2] [ID:12] PASSED Tests.E2E.TC-E2E-02 in 26.4 seconds
-[DEBUG]   2026-06-20 14:17:11.696314 [PID:21044] [0] [ID:15] EXECUTING Tests.NEGATIVE.TC-NEG-02
-[INFO]    2026-06-20 14:17:12.614178 [PID:28696] [3] [ID:13] PASSED Tests.E2E.TC-E2E-03 in 26.3 seconds
-[DEBUG]   2026-06-20 14:17:12.631431 [PID:28948] [1] [ID:16] EXECUTING Tests.NEGATIVE.TC-NEG-03
-[INFO]    2026-06-20 14:17:12.690463 [PID:16516] [1] [ID:6] PASSED Tests.01 UI.TC-UI-07 in 29.2 seconds
-[DEBUG]   2026-06-20 14:17:12.754471 [PID:13528] [2] [ID:17] EXECUTING Tests.NEGATIVE.TC-NEG-04
-[INFO]    2026-06-20 14:17:13.340365 [PID:1984] [1] [ID:11] PASSED Tests.E2E.TC-E2E-01 in 28.5 seconds
-[DEBUG]   2026-06-20 14:17:13.356643 [PID:49236] [3] [ID:18] EXECUTING Tests.NEGATIVE.TC-NEG-05
-[INFO]    2026-06-20 14:17:15.300391 [PID:49236] [3] [ID:18] PASSED Tests.NEGATIVE.TC-NEG-05 in 1.9 seconds
-[DEBUG]   2026-06-20 14:17:15.409629 [PID:43236] [4] [ID:19] EXECUTING Tests.NEGATIVE.TC-NEG-06
-[DEBUG]   2026-06-20 14:17:16.784903 [PID:21044] [0] [ID:15] still running Tests.NEGATIVE.TC-NEG-02 after 5.0s
-[INFO]    2026-06-20 14:17:17.059232 [PID:43236] [4] [ID:19] PASSED Tests.NEGATIVE.TC-NEG-06 in 1.7 seconds
-[DEBUG]   2026-06-20 14:17:17.691553 [PID:28948] [1] [ID:16] still running Tests.NEGATIVE.TC-NEG-03 after 5.0s
-[DEBUG]   2026-06-20 14:17:17.856584 [PID:13528] [2] [ID:17] still running Tests.NEGATIVE.TC-NEG-04 after 5.0s
-[DEBUG]   2026-06-20 14:17:18.244585 [PID:20832] [4] [ID:14] still running Tests.NEGATIVE.TC-NEG-01 after 15.0s
-[INFO]    2026-06-20 14:17:21.185844 [PID:20832] [4] [ID:14] PASSED Tests.NEGATIVE.TC-NEG-01 in 18.2 seconds
-[DEBUG]   2026-06-20 14:17:26.934342 [PID:21044] [0] [ID:15] still running Tests.NEGATIVE.TC-NEG-02 after 15.0s
-[DEBUG]   2026-06-20 14:17:27.884659 [PID:28948] [1] [ID:16] still running Tests.NEGATIVE.TC-NEG-03 after 15.0s
-[DEBUG]   2026-06-20 14:17:27.998854 [PID:13528] [2] [ID:17] still running Tests.NEGATIVE.TC-NEG-04 after 15.0s
-[INFO]    2026-06-20 14:17:37.311996 [PID:21044] [0] [ID:15] PASSED Tests.NEGATIVE.TC-NEG-02 in 25.6 seconds
-[INFO]    2026-06-20 14:17:37.595738 [PID:13528] [2] [ID:17] Execution failed in Tests.NEGATIVE.TC-NEG-04 with 1 failing test(s)
+[DEBUG]   2026-06-20 14:51:09.517821 [PID:4740] [2] [ID:3] EXECUTING Tests.01 UI.TC-UI-04
+[DEBUG]   2026-06-20 14:51:09.518810 [PID:16260] [1] [ID:2] EXECUTING Tests.01 UI.TC-UI-03
+[DEBUG]   2026-06-20 14:51:09.520144 [PID:4216] [3] [ID:4] EXECUTING Tests.01 UI.TC-UI-05
+[DEBUG]   2026-06-20 14:51:09.521309 [PID:30312] [0] [ID:0] EXECUTING Tests.01 UI.TC-UI-01
+[DEBUG]   2026-06-20 14:51:09.523624 [PID:55184] [4] [ID:1] EXECUTING Tests.01 UI.TC-UI-02
+[DEBUG]   2026-06-20 14:51:14.648745 [PID:55184] [4] [ID:1] still running Tests.01 UI.TC-UI-02 after 5.0s
+[DEBUG]   2026-06-20 14:51:14.704861 [PID:4740] [2] [ID:3] still running Tests.01 UI.TC-UI-04 after 5.0s
+[DEBUG]   2026-06-20 14:51:14.707125 [PID:16260] [1] [ID:2] still running Tests.01 UI.TC-UI-03 after 5.0s
+[DEBUG]   2026-06-20 14:51:14.836375 [PID:30312] [0] [ID:0] still running Tests.01 UI.TC-UI-01 after 5.0s
+[DEBUG]   2026-06-20 14:51:14.857256 [PID:4216] [3] [ID:4] still running Tests.01 UI.TC-UI-05 after 5.0s
+[DEBUG]   2026-06-20 14:51:24.716675 [PID:55184] [4] [ID:1] still running Tests.01 UI.TC-UI-02 after 15.0s
+[DEBUG]   2026-06-20 14:51:24.742351 [PID:4740] [2] [ID:3] still running Tests.01 UI.TC-UI-04 after 15.0s
+[DEBUG]   2026-06-20 14:51:24.749612 [PID:16260] [1] [ID:2] still running Tests.01 UI.TC-UI-03 after 15.0s
+[DEBUG]   2026-06-20 14:51:24.907344 [PID:30312] [0] [ID:0] still running Tests.01 UI.TC-UI-01 after 15.0s
+[DEBUG]   2026-06-20 14:51:25.002807 [PID:4216] [3] [ID:4] still running Tests.01 UI.TC-UI-05 after 15.0s
+[INFO]    2026-06-20 14:51:26.181091 [PID:16260] [1] [ID:2] Execution failed in Tests.01 UI.TC-UI-03 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.01 UI
+==============================================================================
+Tests.01 UI.TC-UI-03
+==============================================================================
+TC-UI-03 Create Savings Account Successfully :: Test the savings a... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.01 UI.TC-UI-03                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\2\output.xml
+[DEBUG]   2026-06-20 14:51:26.195717 [PID:32840] [0] [ID:5] EXECUTING Tests.01 UI.TC-UI-06
+[INFO]    2026-06-20 14:51:26.283040 [PID:4740] [2] [ID:3] Execution failed in Tests.01 UI.TC-UI-04 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.01 UI
+==============================================================================
+Tests.01 UI.TC-UI-04
+==============================================================================
+TC-UI-04 Create Checking Account Successfully :: Test the checking... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.01 UI.TC-UI-04                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\3\output.xml
+[DEBUG]   2026-06-20 14:51:26.319839 [PID:5864] [1] [ID:6] EXECUTING Tests.01 UI.TC-UI-07
+[INFO]    2026-06-20 14:51:27.598084 [PID:4216] [3] [ID:4] Execution failed in Tests.01 UI.TC-UI-05 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.01 UI
+==============================================================================
+Tests.01 UI.TC-UI-05
+==============================================================================
+TC-UI-05 Transfer Funds Between Accounts :: Test the fund transfer... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.01 UI.TC-UI-05                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\4\output.xml
+[DEBUG]   2026-06-20 14:51:27.613032 [PID:54328] [2] [ID:7] EXECUTING Tests.API.TC-API-01
+[INFO]    2026-06-20 14:51:27.658590 [PID:55184] [4] [ID:1] Execution failed in Tests.01 UI.TC-UI-02 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.01 UI
+==============================================================================
+Tests.01 UI.TC-UI-02
+==============================================================================
+TC-UI-02 Successful Login to ParaBank :: Test user login with vali... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.01 UI.TC-UI-02                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\1\output.xml
+[DEBUG]   2026-06-20 14:51:27.672784 [PID:51384] [3] [ID:8] EXECUTING Tests.API.TC-API-02
+[DEBUG]   2026-06-20 14:51:31.240613 [PID:32840] [0] [ID:5] still running Tests.01 UI.TC-UI-06 after 5.0s
+[DEBUG]   2026-06-20 14:51:31.440784 [PID:5864] [1] [ID:6] still running Tests.01 UI.TC-UI-07 after 5.0s
+[DEBUG]   2026-06-20 14:51:32.743108 [PID:54328] [2] [ID:7] still running Tests.API.TC-API-01 after 5.0s
+[DEBUG]   2026-06-20 14:51:32.767504 [PID:51384] [3] [ID:8] still running Tests.API.TC-API-02 after 5.0s
+[INFO]    2026-06-20 14:51:36.346958 [PID:30312] [0] [ID:0] Execution failed in Tests.01 UI.TC-UI-01 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.01 UI
+==============================================================================
+Tests.01 UI.TC-UI-01
+==============================================================================
+TC-UI-01 Successful User Registration :: Test user registration wi... Current URL: https://parabank.parasoft.com/
+| FAIL |
+Element 'xpath=//a[contains(@href,'register.htm')]' not visible after 10 seconds.
+------------------------------------------------------------------------------
+Tests.01 UI.TC-UI-01                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\0\output.xml
+[DEBUG]   2026-06-20 14:51:36.353800 [PID:41892] [4] [ID:9] EXECUTING Tests.API.TC-API-03
+[INFO]    2026-06-20 14:51:37.468164 [PID:41892] [4] [ID:9] Execution failed in Tests.API.TC-API-03 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.API
+==============================================================================
+Tests.API.TC-API-03
+==============================================================================
+TC-API-03 Execute Fund Transfer Via API :: Verify fund transfer API   | FAIL |
+429 != 200
+------------------------------------------------------------------------------
+Tests.API.TC-API-03                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.API                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\9\output.xml
+
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[DEBUG]   2026-06-20 14:51:37.480963 [PID:22656] [0] [ID:10] EXECUTING Tests.API.TC-API-04
+[DEBUG]   2026-06-20 14:51:41.371069 [PID:32840] [0] [ID:5] still running Tests.01 UI.TC-UI-06 after 15.0s
+[DEBUG]   2026-06-20 14:51:41.575565 [PID:5864] [1] [ID:6] still running Tests.01 UI.TC-UI-07 after 15.0s
+[DEBUG]   2026-06-20 14:51:42.522928 [PID:22656] [0] [ID:10] still running Tests.API.TC-API-04 after 5.0s
+[DEBUG]   2026-06-20 14:51:42.912546 [PID:51384] [3] [ID:8] still running Tests.API.TC-API-02 after 15.0s
+[DEBUG]   2026-06-20 14:51:42.916755 [PID:54328] [2] [ID:7] still running Tests.API.TC-API-01 after 15.0s
+[INFO]    2026-06-20 14:51:42.922906 [PID:32840] [0] [ID:5] Execution failed in Tests.01 UI.TC-UI-06 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.01 UI
+==============================================================================
+Tests.01 UI.TC-UI-06
+==============================================================================
+TC-UI-06 Verify Account Creation Success Message :: Verify that th... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.01 UI.TC-UI-06                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\5\output.xml
+[INFO]    2026-06-20 14:51:42.924128 [PID:5864] [1] [ID:6] Execution failed in Tests.01 UI.TC-UI-07 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.01 UI
+==============================================================================
+Tests.01 UI.TC-UI-07
+==============================================================================
+TC-UI-07 Verify Transfer Success Message :: Verify that the transf... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.01 UI.TC-UI-07                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.01 UI                                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\6\output.xml
+[DEBUG]   2026-06-20 14:51:42.940182 [PID:12224] [1] [ID:11] EXECUTING Tests.E2E.TC-E2E-01
+[DEBUG]   2026-06-20 14:51:42.942090 [PID:38112] [2] [ID:12] EXECUTING Tests.E2E.TC-E2E-02
+[DEBUG]   2026-06-20 14:51:47.997058 [PID:12224] [1] [ID:11] still running Tests.E2E.TC-E2E-01 after 5.0s
+[DEBUG]   2026-06-20 14:51:48.006859 [PID:38112] [2] [ID:12] still running Tests.E2E.TC-E2E-02 after 5.0s
+[DEBUG]   2026-06-20 14:51:52.674088 [PID:22656] [0] [ID:10] still running Tests.API.TC-API-04 after 15.0s
+[DEBUG]   2026-06-20 14:51:58.046155 [PID:54328] [2] [ID:7] still running Tests.API.TC-API-01 after 30.0s
+[DEBUG]   2026-06-20 14:51:58.046375 [PID:51384] [3] [ID:8] still running Tests.API.TC-API-02 after 30.0s
+[DEBUG]   2026-06-20 14:51:58.118845 [PID:38112] [2] [ID:12] still running Tests.E2E.TC-E2E-02 after 15.0s
+[DEBUG]   2026-06-20 14:51:58.118949 [PID:12224] [1] [ID:11] still running Tests.E2E.TC-E2E-01 after 15.0s
+[INFO]    2026-06-20 14:51:58.539468 [PID:38112] [2] [ID:12] Execution failed in Tests.E2E.TC-E2E-02 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.E2E
+==============================================================================
+Tests.E2E.TC-E2E-02
+==============================================================================
+TC-E2E-02 Open Savings Account and Verify via API :: Create saving... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.E2E.TC-E2E-02                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.E2E                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\12\output.xml
+[DEBUG]   2026-06-20 14:51:58.555877 [PID:30272] [3] [ID:13] EXECUTING Tests.E2E.TC-E2E-03
+[INFO]    2026-06-20 14:51:58.736825 [PID:12224] [1] [ID:11] Execution failed in Tests.E2E.TC-E2E-01 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.E2E
+==============================================================================
+Tests.E2E.TC-E2E-01
+==============================================================================
+TC-E2E-01 Create Account and Verify via API :: Verify that account... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.E2E.TC-E2E-01                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.E2E                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\11\output.xml
+[DEBUG]   2026-06-20 14:51:58.743041 [PID:46516] [4] [ID:14] EXECUTING Tests.NEGATIVE.TC-NEG-01
+[DEBUG]   2026-06-20 14:52:03.705661 [PID:30272] [3] [ID:13] still running Tests.E2E.TC-E2E-03 after 5.0s
+[DEBUG]   2026-06-20 14:52:03.802337 [PID:46516] [4] [ID:14] still running Tests.NEGATIVE.TC-NEG-01 after 5.0s
+[DEBUG]   2026-06-20 14:52:07.977297 [PID:22656] [0] [ID:10] still running Tests.API.TC-API-04 after 30.0s
+[DEBUG]   2026-06-20 14:52:13.986010 [PID:30272] [3] [ID:13] still running Tests.E2E.TC-E2E-03 after 15.0s
+[INFO]    2026-06-20 14:52:13.990021 [PID:46516] [4] [ID:14] Execution failed in Tests.NEGATIVE.TC-NEG-01 with 1 failing test(s)
 ==============================================================================
 Tests
 ==============================================================================
 Tests.NEGATIVE
 ==============================================================================
-Tests.NEGATIVE.TC-NEG-04
+Tests.NEGATIVE.TC-NEG-01
 ==============================================================================
-TC-NEG-04 Transfer Amount Greater Than Balance :: Enter 999999 as ... From dropdown options: []
-From dropdown options: ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '13566', '13677', '13899', '14454', '14565', '14676', '15009', '15342', '15786', '15897', '16341', '16563', '18117', '18228', '18339', '18450', '18561', '18672', '18783', '18894', '19005', '19116', '19227', '19338', '19449', '19560', '19671', '19893', '20004', '20115', '20226', '20337', '20448', '20559', '20670', '20781', '20892', '21003', '21336', '21558', '21669', '21780', '21891', '22002', '22113', '22224', '22335', '22446', '22557', '22668', '22779', '22890', '23001', '54321']
-Submitted transfer with amount 999999 (way above balance)
-| FAIL |
-Page should not have contained text 'Error!'.
+TC-NEG-01 Login with Non Existent User :: Verify that logging in w... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
 ------------------------------------------------------------------------------
-Tests.NEGATIVE.TC-NEG-04                                              | FAIL |
+Tests.NEGATIVE.TC-NEG-01                                              | FAIL |
 1 test, 0 passed, 1 failed
 ==============================================================================
 Tests.NEGATIVE                                                        | FAIL |
@@ -90,8 +279,165 @@ Tests.NEGATIVE                                                        | FAIL |
 Tests                                                                 | FAIL |
 1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  D:\parabank\reports\pabot_results\17\output.xml
-[INFO]    2026-06-20 14:17:38.503206 [PID:28948] [1] [ID:16] Execution failed in Tests.NEGATIVE.TC-NEG-03 with 1 failing test(s)
+Output:  D:\parabank\reports\pabot_results\14\output.xml
+[DEBUG]   2026-06-20 14:52:13.998016 [PID:3892] [0] [ID:15] EXECUTING Tests.NEGATIVE.TC-NEG-02
+[INFO]    2026-06-20 14:52:14.196844 [PID:30272] [3] [ID:13] Execution failed in Tests.E2E.TC-E2E-03 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.E2E
+==============================================================================
+Tests.E2E.TC-E2E-03
+==============================================================================
+TC-E2E-03 Transfer Funds and Check Balance via API :: Transfer fun... | FAIL |
+Element with locator 'xpath=//input[@name="username"]' not found.
+------------------------------------------------------------------------------
+Tests.E2E.TC-E2E-03                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.E2E                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\13\output.xml
+[DEBUG]   2026-06-20 14:52:14.204034 [PID:28464] [1] [ID:16] EXECUTING Tests.NEGATIVE.TC-NEG-03
+[DEBUG]   2026-06-20 14:52:18.482984 [PID:51384] [3] [ID:8] still running Tests.API.TC-API-02 after 50.0s
+[DEBUG]   2026-06-20 14:52:18.687762 [PID:54328] [2] [ID:7] still running Tests.API.TC-API-01 after 50.0s
+[DEBUG]   2026-06-20 14:52:19.111681 [PID:3892] [0] [ID:15] still running Tests.NEGATIVE.TC-NEG-02 after 5.0s
+[DEBUG]   2026-06-20 14:52:19.291063 [PID:28464] [1] [ID:16] still running Tests.NEGATIVE.TC-NEG-03 after 5.0s
+[INFO]    2026-06-20 14:52:20.633558 [PID:22656] [0] [ID:10] Execution failed in Tests.API.TC-API-04 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.API
+==============================================================================
+Tests.API.TC-API-04
+==============================================================================
+TC-API-04 Verify Credit Transaction History :: Verify transaction ... | FAIL |
+500 != 200
+------------------------------------------------------------------------------
+Tests.API.TC-API-04                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.API                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\10\output.xml
+
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[DEBUG]   2026-06-20 14:52:20.647906 [PID:12224] [2] [ID:17] EXECUTING Tests.NEGATIVE.TC-NEG-04
+[INFO]    2026-06-20 14:52:21.054183 [PID:54328] [2] [ID:7] Execution failed in Tests.API.TC-API-01 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.API
+==============================================================================
+Tests.API.TC-API-01
+==============================================================================
+TC-API-01 Validate Account Exists via API :: Validate Account Exis... | FAIL |
+500 != 200
+------------------------------------------------------------------------------
+Tests.API.TC-API-01                                                   | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.API                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\7\output.xml
+
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(
+[DEBUG]   2026-06-20 14:52:21.065977 [PID:35348] [3] [ID:18] EXECUTING Tests.NEGATIVE.TC-NEG-05
+[INFO]    2026-06-20 14:52:21.467919 [PID:51384] [3] [ID:8] PASSED Tests.API.TC-API-02 in 53.8 seconds
+[DEBUG]   2026-06-20 14:52:21.482022 [PID:55388] [4] [ID:19] EXECUTING Tests.NEGATIVE.TC-NEG-06
+[INFO]    2026-06-20 14:52:22.783655 [PID:35348] [3] [ID:18] PASSED Tests.NEGATIVE.TC-NEG-05 in 1.7 seconds
+[INFO]    2026-06-20 14:52:23.232091 [PID:55388] [4] [ID:19] PASSED Tests.NEGATIVE.TC-NEG-06 in 1.8 seconds
+[DEBUG]   2026-06-20 14:52:25.745235 [PID:12224] [2] [ID:17] still running Tests.NEGATIVE.TC-NEG-04 after 5.0s
+[INFO]    2026-06-20 14:52:29.059208 [PID:3892] [0] [ID:15] Execution failed in Tests.NEGATIVE.TC-NEG-02 with 1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.NEGATIVE
+==============================================================================
+Tests.NEGATIVE.TC-NEG-02
+==============================================================================
+TC-NEG-02 Blank Transfer Amount :: Submit the transfer form withou... | FAIL |
+InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+------------------------------------------------------------------------------
+Tests.NEGATIVE.TC-NEG-02                                              | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.NEGATIVE                                                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\parabank\reports\pabot_results\15\output.xml
+
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c007726]
+	chromedriver!(No symbol) [0x7ff79c053083]
+	chromedriver!(No symbol) [0x7ff79c08a2d2]
+	chromedriver!(No symbol) [0x7ff79c0840d2]
+	chromedriver!(No symbol) [0x7ff79c083892]
+	chromedriver!(No symbol) [0x7ff79bfd03e5]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!(No symbol) [0x7ff79bfcf188]
+	chromedriver!GetHandleVerifier [0x7ff79cc77b58+7c84d8]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+[INFO]    2026-06-20 14:52:29.143954 [PID:28464] [1] [ID:16] Execution failed in Tests.NEGATIVE.TC-NEG-03 with 1 failing test(s)
 ==============================================================================
 Tests
 ==============================================================================
@@ -99,11 +445,30 @@ Tests.NEGATIVE
 ==============================================================================
 Tests.NEGATIVE.TC-NEG-03
 ==============================================================================
-TC-NEG-03 Transfer Negative Amount :: Enter -100 as transfer amount   From dropdown options: []
-From dropdown options: ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '13566', '13677', '13899', '14454', '14565', '14676', '15009', '15342', '15786', '15897', '16341', '16563', '18117', '18228', '18339', '18450', '18561', '18672', '18783', '18894', '19005', '19116', '19227', '19338', '19449', '19560', '19671', '19893', '20004', '20115', '20226', '20337', '20448', '20559', '20670', '20781', '20892', '21003', '21336', '21558', '21669', '21780', '21891', '22002', '22113', '22224', '22335', '22446', '22557', '22668', '22779', '22890', '23001', '54321']
-Submitted transfer with negative amount -100
-| FAIL |
-Page should not have contained text 'Error!'.
+TC-NEG-03 Transfer Negative Amount :: Enter -100 as transfer amount   | FAIL |
+InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
 ------------------------------------------------------------------------------
 Tests.NEGATIVE.TC-NEG-03                                              | FAIL |
 1 test, 0 passed, 1 failed
@@ -115,15 +480,74 @@ Tests                                                                 | FAIL |
 1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\16\output.xml
-[INFO]    20 tests, 18 passed, 2 failed, 0 skipped.
+
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c007726]
+	chromedriver!(No symbol) [0x7ff79c053083]
+	chromedriver!(No symbol) [0x7ff79c08a2d2]
+	chromedriver!(No symbol) [0x7ff79c0840d2]
+	chromedriver!(No symbol) [0x7ff79c083892]
+	chromedriver!(No symbol) [0x7ff79bfd03e5]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!(No symbol) [0x7ff79bfcf188]
+	chromedriver!GetHandleVerifier [0x7ff79cc77b58+7c84d8]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+[DEBUG]   2026-06-20 14:52:35.878374 [PID:12224] [2] [ID:17] still running Tests.NEGATIVE.TC-NEG-04 after 15.0s
+[WARNING] [ INTERRUPT ] Ctrl+C pressed - initiating graceful shutdown...
+[WARNING] 2026-06-20 14:52:38.239849 [PID:12224] [2] [ID:17] Process Tests.NEGATIVE.TC-NEG-04 interrupted by user (Ctrl+C)
+[DEBUG]   [ProcessManager] Terminating process tree PID=12224
+[DEBUG]   2026-06-20 14:52:38.239849 [PID:12224] [2] [ID:17] Starting dry run to mark test as failed due to user interrupt: robot --dryrun --exitonerror --listener C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pabot\listener\interrupt_listener.py -A reports\pabot_results\17\robot_argfile.txt
+[INFO]    2026-06-20 14:52:39.459743 [PID:12224] [2] [ID:17] Execution failed in Tests.NEGATIVE.TC-NEG-04 with -1 failing test(s)
+==============================================================================
+Tests
+==============================================================================
+Tests.NEGATIVE
+==============================================================================
+Tests.NEGATIVE.TC-NEG-04
+==============================================================================
+TC-NEG-04 Transfer Amount Greater Than Balance :: Enter 999999 as ...
+
+[ WARN ] Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=149.0.7827.103)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
+	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
+	chromedriver!(No symbol) [0x7ff79c00793d]
+	chromedriver!(No symbol) [0x7ff79bff2d82]
+	chromedriver!(No symbol) [0x7ff79c0190cc]
+	chromedriver!(No symbol) [0x7ff79c091aa0]
+	chromedriver!(No symbol) [0x7ff79c0aec82]
+	chromedriver!(No symbol) [0x7ff79c05401c]
+	chromedriver!(No symbol) [0x7ff79c054f43]
+	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
+	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
+	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
+	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
+	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
+	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
+	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
+	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
+	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+[INFO]    20 tests, 3 passed, 17 failed, 0 skipped.
 [INFO]    ===================================================
 [INFO]    Output:  D:\parabank\reports\output.xml
 [INFO]    Log:     D:\parabank\reports\log.html
 [INFO]    Report:  D:\parabank\reports\report.html
+[ERROR]   [ ERROR ] Execution stopped by user (Ctrl+C)
 [DEBUG]   Finalizing Pabot execution...
 [DEBUG]   Stopping PabotLib process
 [INFO]    Robot Framework remote server at 127.0.0.1:8270 stopped.
 [DEBUG]   PabotLib process stopped
-[INFO]    Total testing: 6 minutes 21.90 seconds
-[INFO]    Elapsed time:  1 minute 25.61 seconds
+[INFO]    Total testing: 6 minutes 35.80 seconds
+[INFO]    Elapsed time:  1 minute 30.91 seconds
 [DEBUG]   Logs flushed successfully.

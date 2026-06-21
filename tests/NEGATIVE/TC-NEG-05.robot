@@ -11,8 +11,7 @@ ${API_BASE}    https://parabank.parasoft.com/parabank/services/bank
 TC-NEG-05 Invalid Account ID via API
     [Documentation]    Call GET /accounts/000000 with a fake account ID — expect a 4xx response
     [Tags]    negative    API
-    [Setup]    NONE
-    [Teardown]    NONE
+
     ${auth}=    Create List    john    demo
     Create Session    parabank    ${API_BASE}    auth=${auth}    verify=${False}
     ${response}=    GET On Session    parabank    /accounts/000000
