@@ -5,16 +5,16 @@ Tests.API
 ==============================================================================
 Tests.API.TC-API-01
 ==============================================================================
-TC-API-01 Validate Account Exists via API :: Validate Account Exis... | FAIL |
-500 != 200
+TC-API-01 Validate Account Exists via API :: Validate Account Exis... [{"id":12345,"customerId":12212,"type":"CHECKING","balance":-3050.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":260.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":13677,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":13788,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14121,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14232,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14343,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+| PASS |
 ------------------------------------------------------------------------------
-Tests.API.TC-API-01                                                   | FAIL |
-1 test, 0 passed, 1 failed
+Tests.API.TC-API-01                                                   | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests.API                                                             | FAIL |
-1 test, 0 passed, 1 failed
+Tests.API                                                             | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\7\output.xml

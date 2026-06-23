@@ -1,241 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:51:37.878506" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-22T23:45:23.681609" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="API" source="D:\parabank\tests\API">
 <suite id="s1-s1-s1" name="TC-API-04" source="D:\parabank\tests\API\TC-API-04.robot">
 <kw name="Create Session To API" owner="api_keywords" type="SETUP">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T14:51:38.086875" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-22T23:45:23.907156" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T14:51:38.086578" elapsed="0.000329"/>
+<status status="PASS" start="2026-06-22T23:45:23.906870" elapsed="0.000318"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:51:38.087927" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-06-22T23:45:23.908113" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={'Accept': 'application/json'},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>parabank</arg>
 <arg>${API_BASE_URL}</arg>
 <arg>headers=${headers}</arg>
 <arg>verify=${False}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-06-20T14:51:38.087667" elapsed="0.000394"/>
+<status status="PASS" start="2026-06-22T23:45:23.907812" elapsed="0.000475"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:51:38.086168" elapsed="0.002502"/>
+<status status="PASS" start="2026-06-22T23:45:23.906454" elapsed="0.002352"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-API-04 Verify Credit Transaction History" line="8">
 <kw name="Get Account Transactions" owner="api_keywords">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2026-06-20T14:51:38.089542" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
+<msg time="2026-06-22T23:45:23.909797" level="INFO">${headers} = {'Accept': 'application/json'}</msg>
 <var>${headers}</var>
 <arg>Accept=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2026-06-20T14:51:38.089420" elapsed="0.000141"/>
+<status status="PASS" start="2026-06-22T23:45:23.909651" elapsed="0.000169"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:52:20.311995" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
+<msg time="2026-06-22T23:45:24.837407" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
  path_url=/parabank/services/bank/accounts/13455/transactions 
  headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': 'application/json', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2026-06-20T14:52:20.312258" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
- status=500, reason=Internal Server Error 
- headers={'Date': 'Sat, 20 Jun 2026 09:22:20 GMT', 'Content-Type': 'text/html;charset=ISO-8859-1', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'Set-Cookie': 'JSESSIONID=EF7FCF48763671BF0022F3C9DE65FD7C; Path=/parabank; HttpOnly', 'content-language': 'en-US', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'CF-RAY': 'a0e9b55b3bb65e20-BOM'} 
- body=
-
-
-
-&lt;!-- &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
-&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
- --&gt;
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;meta charset="UTF-8"&gt;
-		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
-		&lt;title&gt;ParaBank | Error&lt;/title&gt;
-		&lt;link href="template.css;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C" rel="stylesheet"
-			type="text/css" /&gt;
-		&lt;link href="style.css;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C" rel="stylesheet"
-			type="text/css" /&gt;
-		&lt;script src="webjars/jquery/4.0.0/jquery.min.js;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;&lt;/script&gt;
-	&lt;/head&gt;
-
-	&lt;body
-		
-	    onload="document.login.username.focus();"
-	  &gt;
-		&lt;div id="mainPanel"&gt;
-			
-				
-					
-
-
-
-&lt;div id="topPanel"&gt;
-  &lt;a href="admin.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;&lt;img src="images/clear.gif;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C" width="56" height="42" border="0" class="admin"/&gt;&lt;/a&gt;
-  &lt;a href="index.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;&lt;img src="images/logo.gif;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C" alt="ParaBank" width="136" height="31" border="0" class="logo" title="ParaBank"/&gt;&lt;/a&gt;
-  &lt;p class="caption"&gt;Experience the difference&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id="headerPanel" style="background: url(images/header-main.jpg;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C) 0 0 no-repeat;"&gt;
-  
-
-
-&lt;ul class="leftmenu"&gt;
-  &lt;li class="Solutions"&gt;Solutions&lt;/li&gt;
-  &lt;li&gt;&lt;a href="about.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="services.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Services&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="admin.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Admin Page&lt;/a&gt;&lt;/li&gt;
-  
-&lt;/ul&gt;
-  
-
-
-&lt;ul class="button"&gt;
-  &lt;li class="home"&gt;&lt;a href="index.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;home&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="aboutus"&gt;&lt;a href="about.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;about&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="contact"&gt;&lt;a href="contact.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;contact&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-				
-				
-			
-			&lt;div id="bodyPanel"&gt;
-				&lt;div id="leftPanel"&gt;
-					
-						
-							
-
-
-&lt;h2&gt;Customer Login&lt;/h2&gt;
-&lt;div id="loginPanel"&gt;
-  &lt;form name="login" action="login.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C" method="POST"&gt;
-    
-    &lt;p&gt;&lt;b&gt;Username&lt;/b&gt;&lt;/p&gt;
-    &lt;div class="login"&gt;&lt;input type="text" class="input" name="username"/&gt;&lt;/div&gt;
-    &lt;p&gt;&lt;b&gt;Password&lt;/b&gt;&lt;/p&gt;
-    &lt;div class="login"&gt;&lt;input type="password" class="input" name="password"/&gt;&lt;/div&gt;
-    &lt;div class="login"&gt;&lt;input type="submit" class="button" value="Log In"/&gt;&lt;/div&gt;
-  &lt;/form&gt;
-  &lt;p&gt;&lt;a href="lookup.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Forgot login info?&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;a href="register.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Register&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-						
-						
-					
-				&lt;/div&gt;
-				&lt;div id="rightPanel"&gt;
-					
-
-
-&lt;h1 class="title"&gt;Error!&lt;/h1&gt;
-
-
-
-&lt;p class="error"&gt;An internal error has occurred and has been logged.&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-		
-
-
-&lt;div id="footermainPanel"&gt;
-  &lt;div id="footerPanel"&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href="index.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Home&lt;/a&gt;| &lt;/li&gt;
-      &lt;li&gt;&lt;a href="about.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;About Us&lt;/a&gt;| &lt;/li&gt;
-      &lt;li&gt;&lt;a href="services.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Services&lt;/a&gt;| &lt;/li&gt;
-      &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/products.jsp"&gt;Products&lt;/a&gt;| &lt;/li&gt;
-      &lt;li&gt;&lt;a href="http://www.parasoft.com/jsp/pr/contacts.jsp"&gt;Locations&lt;/a&gt;| &lt;/li&gt;
-      &lt;li&gt;&lt;a href="http://forums.parasoft.com/"&gt;Forum&lt;/a&gt;| &lt;/li&gt;
-      &lt;li&gt;&lt;a href="sitemap.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Site Map&lt;/a&gt;| &lt;/li&gt;
-      &lt;li&gt;&lt;a href="contact.htm;jsessionid=EF7FCF48763671BF0022F3C9DE65FD7C"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;p class="copyright"&gt;&amp;copy; Parasoft. All rights reserved.&lt;/p&gt;
-    &lt;ul class="visit"&gt;
-      &lt;li&gt;Visit us at:&lt;/li&gt;
-      &lt;li&gt;&lt;a href="http://www.parasoft.com/" target="_blank"&gt;www.parasoft.com&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-	&lt;/body&gt;
-&lt;/html&gt;
- 
+<msg time="2026-06-22T23:45:24.837545" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/accounts/13455/transactions 
+ status=200, reason=OK 
+ headers={'Date': 'Mon, 22 Jun 2026 18:15:24 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Content-Security-Policy-Report-Only': "script-src 'unsafe-inline' 'unsafe-eval'; connect-src 'none'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=oz2DvhbnimisHyem32_AZQo4FAC40XI6por0eOochbo-1782152124.0911674-1.0.1.1-iyBhQfvyFkLRXA.mypGY2Sui.WuvR2PJLzA.cFMIl31o0lq7F.Wu6eAIfo.oIOxHTspl4K4k_Gd5YV4wA5_BN3PBdX6GAOWtIRRvHzP6UPDSluzWQi_nA1rNckUlHpf5x40mGKkwOX4sz0C3sIiK_fXesk8cfsQUKOBeKLYs2zFCwDIf.1jtsj7xFIqWNHOp; report-to cf-csp-endpoint", 'X-Content-Type-Options': 'nosniff', 'Report-To': '{"group":"cf-csp-endpoint","max_age":86400,"endpoints":[{"url":"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=oz2DvhbnimisHyem32_AZQo4FAC40XI6por0eOochbo-1782152124.0911674-1.0.1.1-iyBhQfvyFkLRXA.mypGY2Sui.WuvR2PJLzA.cFMIl31o0lq7F.Wu6eAIfo.oIOxHTspl4K4k_Gd5YV4wA5_BN3PBdX6GAOWtIRRvHzP6UPDSluzWQi_nA1rNckUlHpf5x40mGKkwOX4sz0C3sIiK_fXesk8cfsQUKOBeKLYs2zFCwDIf.1jtsj7xFIqWNHOp"}]}', 'Content-Encoding': 'gzip', 'CF-RAY': 'a0fd3cf788a2a7ee-DEL'} 
+ body=[{"id":16585,"accountId":13455,"type":"Credit","date":1782086400000,"amount":150.00,"description":"Funds Transfer Received"}] 
  </msg>
-<msg time="2026-06-20T14:52:20.312559" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-06-22T23:45:24.837623" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-06-20T14:52:20.312890" level="INFO">${response} = &lt;Response [500]&gt;</msg>
+<msg time="2026-06-22T23:45:24.837751" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>parabank</arg>
 <arg>/accounts/${accountId}/transactions</arg>
 <arg>headers=${headers}</arg>
 <arg>expected_status=any</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-06-20T14:51:38.090094" elapsed="42.222838"/>
+<status status="PASS" start="2026-06-22T23:45:23.910246" elapsed="0.927529"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2026-06-20T14:52:20.314930" elapsed="0.000274"/>
+<status status="PASS" start="2026-06-22T23:45:24.838539" elapsed="0.000110"/>
 </return>
-<msg time="2026-06-20T14:52:20.315897" level="INFO">${response} = &lt;Response [500]&gt;</msg>
+<msg time="2026-06-22T23:45:24.838901" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>${ACCOUNT_ID_2}</arg>
-<status status="PASS" start="2026-06-20T14:51:38.089227" elapsed="42.226739"/>
+<status status="PASS" start="2026-06-22T23:45:23.909423" elapsed="0.929504"/>
 </kw>
 <kw name="Verify Response Code" owner="api_keywords">
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-06-20T14:52:20.319298" level="INFO">Argument types are:
+<msg time="2026-06-22T23:45:24.840413" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<msg time="2026-06-20T14:52:20.319596" level="FAIL">500 != 200</msg>
 <arg>${response.status_code}</arg>
 <arg>${code}</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="FAIL" start="2026-06-20T14:52:20.318084" elapsed="0.001987">500 != 200</status>
+<status status="PASS" start="2026-06-22T23:45:24.839909" elapsed="0.000568"/>
 </kw>
 <arg>${response}</arg>
 <arg>200</arg>
-<status status="FAIL" start="2026-06-20T14:52:20.317504" elapsed="0.003823">500 != 200</status>
+<status status="PASS" start="2026-06-22T23:45:24.839581" elapsed="0.001397"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>${response.text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2026-06-20T14:52:20.321831" elapsed="0.000118"/>
+<status status="PASS" start="2026-06-22T23:45:24.841166" elapsed="0.000440"/>
 </kw>
 <kw name="Should Contain" owner="BuiltIn">
 <arg>${response.text}</arg>
 <arg>Credit</arg>
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="NOT RUN" start="2026-06-20T14:52:20.322418" elapsed="0.000095"/>
+<status status="PASS" start="2026-06-22T23:45:24.841761" elapsed="0.000347"/>
 </kw>
 <doc>Verify transaction history for destination account</doc>
 <tag>api</tag>
-<status status="FAIL" start="2026-06-20T14:51:38.088800" elapsed="42.234262">500 != 200</status>
+<status status="PASS" start="2026-06-22T23:45:23.908937" elapsed="0.933413"/>
 </test>
-<status status="FAIL" start="2026-06-20T14:51:37.949338" elapsed="42.375518"/>
+<status status="PASS" start="2026-06-22T23:45:23.767119" elapsed="1.075871"/>
 </suite>
-<status status="FAIL" start="2026-06-20T14:51:37.948458" elapsed="42.382331"/>
+<status status="PASS" start="2026-06-22T23:45:23.765372" elapsed="1.079327"/>
 </suite>
-<status status="FAIL" start="2026-06-20T14:51:37.938570" elapsed="42.393343"/>
+<status status="PASS" start="2026-06-22T23:45:23.751817" elapsed="1.093227"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">api</stat>
+<stat pass="1" fail="0" skip="0">api</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="API">Tests.API</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="TC-API-04">Tests.API.TC-API-04</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="API">Tests.API</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC-API-04">Tests.API.TC-API-04</stat>
 </suite>
 </statistics>
 <errors>

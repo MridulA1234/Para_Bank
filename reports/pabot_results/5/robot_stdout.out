@@ -5,16 +5,18 @@ Tests.01 UI
 ==============================================================================
 Tests.01 UI.TC-UI-06
 ==============================================================================
-TC-UI-06 Verify Account Creation Success Message :: Verify that th... | FAIL |
-Element with locator 'xpath=//input[@name="username"]' not found.
+TC-UI-06 Verify Account Creation Success Message :: Verify that th... Available Accounts: []
+Available Accounts: ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '13677', '13788', '14121', '14232', '14343', '14454', '54321']
+New account number: 14676
+| PASS |
 ------------------------------------------------------------------------------
-Tests.01 UI.TC-UI-06                                                  | FAIL |
-1 test, 0 passed, 1 failed
+Tests.01 UI.TC-UI-06                                                  | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests.01 UI                                                           | FAIL |
-1 test, 0 passed, 1 failed
+Tests.01 UI                                                           | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\5\output.xml

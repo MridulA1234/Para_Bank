@@ -1,28 +1,22 @@
-2026-06-20 14:51:28.138257 ==============================================================================
-2026-06-20 14:51:28.197376 Tests
-2026-06-20 14:51:28.197482 ==============================================================================
-2026-06-20 14:51:28.197520 Tests.API
-2026-06-20 14:51:28.197551 ==============================================================================
-2026-06-20 14:51:28.317530 Tests.API.TC-API-01
-2026-06-20 14:51:28.365343 ==============================================================================
-2026-06-20 14:52:20.525581 TC-API-01 Validate Account Exists via API :: Validate Account Exis... | FAIL |
-2026-06-20 14:52:20.525581 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-2026-06-20 14:52:20.571960 500 != 200
-2026-06-20 14:52:20.571960   warnings.warn(
-2026-06-20 14:52:20.572104 ------------------------------------------------------------------------------
-2026-06-20 14:52:20.572104 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-2026-06-20 14:52:20.572228 Tests.API.TC-API-01                                                   | FAIL |
-2026-06-20 14:52:20.572228   warnings.warn(
-2026-06-20 14:52:20.577239 1 test, 0 passed, 1 failed
-2026-06-20 14:52:20.577239 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-2026-06-20 14:52:20.578489 ==============================================================================
-2026-06-20 14:52:20.578489   warnings.warn(
-2026-06-20 14:52:20.578990 Tests.API                                                             | FAIL |
-2026-06-20 14:52:20.578990 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-2026-06-20 14:52:20.579054 1 test, 0 passed, 1 failed
-2026-06-20 14:52:20.579054   warnings.warn(
-2026-06-20 14:52:20.579108 ==============================================================================
-2026-06-20 14:52:20.579146 Tests                                                                 | FAIL |
-2026-06-20 14:52:20.579178 1 test, 0 passed, 1 failed
-2026-06-20 14:52:20.579208 ==============================================================================
-2026-06-20 14:52:20.579237 Output:  D:\parabank\reports\pabot_results\7\output.xml
+2026-06-22 23:45:21.647024 ==============================================================================
+2026-06-22 23:45:21.653611 Tests
+2026-06-22 23:45:21.653664 ==============================================================================
+2026-06-22 23:45:21.653695 Tests.API
+2026-06-22 23:45:21.654885 ==============================================================================
+2026-06-22 23:45:21.763848 Tests.API.TC-API-01
+2026-06-22 23:45:21.829110 ==============================================================================
+2026-06-22 23:45:22.983676 TC-API-01 Validate Account Exists via API :: Validate Account Exis... [{"id":12345,"customerId":12212,"type":"CHECKING","balance":-3050.00},{"id":12456,"customerId":12212,"type":"CHECKING","balance":260.45},{"id":12567,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12678,"customerId":12212,"type":"SAVINGS","balance":-100.00},{"id":12789,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":12900,"customerId":12212,"type":"CHECKING","balance":0.00},{"id":13011,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13122,"customerId":12212,"type":"CHECKING","balance":1100.00},{"id":13233,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10},{"id":13677,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":13788,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14121,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14232,"customerId":12212,"type":"SAVINGS","balance":100.00},{"id":14343,"customerId":12212,"type":"CHECKING","balance":100.00},{"id":54321,"customerId":12212,"type":"CHECKING","balance":1351.12}]
+2026-06-22 23:45:22.983676 C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+2026-06-22 23:45:23.037607 | PASS |
+2026-06-22 23:45:23.037607   warnings.warn(
+2026-06-22 23:45:23.037740 ------------------------------------------------------------------------------
+2026-06-22 23:45:23.037763 Tests.API.TC-API-01                                                   | PASS |
+2026-06-22 23:45:23.040896 1 test, 1 passed, 0 failed
+2026-06-22 23:45:23.040922 ==============================================================================
+2026-06-22 23:45:23.040939 Tests.API                                                             | PASS |
+2026-06-22 23:45:23.040955 1 test, 1 passed, 0 failed
+2026-06-22 23:45:23.040970 ==============================================================================
+2026-06-22 23:45:23.040985 Tests                                                                 | PASS |
+2026-06-22 23:45:23.041503 1 test, 1 passed, 0 failed
+2026-06-22 23:45:23.041530 ==============================================================================
+2026-06-22 23:45:23.041548 Output:  D:\parabank\reports\pabot_results\7\output.xml

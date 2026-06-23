@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-20T14:52:21.442201" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.14.3 on win32)" generated="2026-06-22T23:45:53.008097" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\parabank\tests">
 <suite id="s1-s1" name="NEGATIVE" source="D:\parabank\tests\NEGATIVE">
 <suite id="s1-s1-s1" name="TC-NEG-05" source="D:\parabank\tests\NEGATIVE\TC-NEG-05.robot">
 <kw name="Load Environment" owner="common_keywords" type="SETUP">
 <kw name="Load Env" owner="environment">
 <arg>${ENV}</arg>
-<status status="PASS" start="2026-06-20T14:52:21.887931" elapsed="0.000962"/>
+<status status="PASS" start="2026-06-22T23:45:53.343134" elapsed="0.000894"/>
 </kw>
 <kw name="Get Env" owner="environment">
-<msg time="2026-06-20T14:52:21.889591" level="INFO">${url} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-22T23:45:53.344415" level="INFO">${url} = https://parabank.parasoft.com</msg>
 <var>${url}</var>
 <arg>baseurl</arg>
-<status status="PASS" start="2026-06-20T14:52:21.889374" elapsed="0.000255"/>
+<status status="PASS" start="2026-06-22T23:45:53.344275" elapsed="0.000169"/>
 </kw>
 <kw name="Set Global Variable" owner="BuiltIn">
-<msg time="2026-06-20T14:52:21.891829" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
+<msg time="2026-06-22T23:45:53.345922" level="INFO">${BASE_URL} = https://parabank.parasoft.com</msg>
 <arg>${BASE_URL}</arg>
 <arg>${url}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<status status="PASS" start="2026-06-20T14:52:21.891036" elapsed="0.000848"/>
+<status status="PASS" start="2026-06-22T23:45:53.345249" elapsed="0.000717"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2026-06-20T14:52:21.892754" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
+<msg time="2026-06-22T23:45:53.346666" level="INFO">Loaded BASE_URL=https://parabank.parasoft.com</msg>
 <arg>Loaded BASE_URL=${BASE_URL}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2026-06-20T14:52:21.892557" elapsed="0.000244"/>
+<status status="PASS" start="2026-06-22T23:45:53.346506" elapsed="0.000198"/>
 </kw>
-<status status="PASS" start="2026-06-20T14:52:21.887237" elapsed="0.017639"/>
+<status status="PASS" start="2026-06-22T23:45:53.342581" elapsed="0.004579"/>
 </kw>
 <test id="s1-s1-s1-t1" name="TC-NEG-05 Invalid Account ID via API" line="11">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2026-06-20T14:52:21.908111" level="INFO">${auth} = ['john', 'demo']</msg>
+<msg time="2026-06-22T23:45:53.347942" level="INFO">${auth} = ['john', 'demo']</msg>
 <var>${auth}</var>
 <arg>john</arg>
 <arg>demo</arg>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2026-06-20T14:52:21.907868" elapsed="0.000278"/>
+<status status="PASS" start="2026-06-22T23:45:53.347819" elapsed="0.000147"/>
 </kw>
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:52:21.909384" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={},                     cookies={}, auth=&lt;requests.auth.HTTPBasicAuth object at 0x000001C7E8BDD400&gt;, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2026-06-22T23:45:53.348732" level="INFO">Creating Session using : alias=parabank, url=https://parabank.parasoft.com/parabank/services/bank, headers={},                     cookies={}, auth=&lt;requests.auth.HTTPBasicAuth object at 0x0000020AC3ADD400&gt;, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>parabank</arg>
 <arg>${API_BASE}</arg>
 <arg>auth=${auth}</arg>
 <arg>verify=${False}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2026-06-20T14:52:21.909055" elapsed="0.000515"/>
+<status status="PASS" start="2026-06-22T23:45:53.348480" elapsed="0.000410"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2026-06-20T14:52:22.480668" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/accounts/000000 
+<msg time="2026-06-22T23:45:53.887451" level="INFO">GET Request : url=https://parabank.parasoft.com/parabank/services/bank/accounts/000000 
  path_url=/parabank/services/bank/accounts/000000 
  headers={'User-Agent': 'python-requests/2.33.1', 'Accept-Encoding': 'gzip, deflate, zstd', 'Accept': '*/*', 'Connection': 'keep-alive', 'Authorization': 'Basic am9objpkZW1v'} 
  body=None 
  </msg>
-<msg time="2026-06-20T14:52:22.480821" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/accounts/000000 
+<msg time="2026-06-22T23:45:53.887728" level="INFO">GET Response : url=https://parabank.parasoft.com/parabank/services/bank/accounts/000000 
  status=400, reason=Bad Request 
- headers={'Date': 'Sat, 20 Jun 2026 09:22:22 GMT', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '25', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'X-Content-Type-Options': 'nosniff', 'CF-RAY': 'a0e9b5684cc33f97-BOM'} 
+ headers={'Date': 'Mon, 22 Jun 2026 18:15:53 GMT', 'Content-Type': 'text/plain;charset=UTF-8', 'Content-Length': '25', 'Connection': 'keep-alive', 'Server': 'cloudflare', 'cf-cache-status': 'DYNAMIC', 'Content-Security-Policy-Report-Only': "script-src 'unsafe-inline' 'unsafe-eval'; report-uri https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=Q8NSN2nLwDT5ySp8oE1_cjtlXupX2jEvNZMYL5w4bkI-1782152153.3393404-1.0.1.1-5hvCXyUsgQXYLOothkZKppwL4ci_1YRjGrh.AUrlkO1bVu.RWCpLdwKIgBHSma1IEcN_w7.PqJBQOyUBuaePzJCYVnidFi0ruMdNKLJAiNeb9Gfn4R4ZWb3UzhFAEPKVFgW2MSQPKi1DZSgRSil6rlLEmXgbyqX_vetKs61yHvwpUuJLwQamQywUrR6BNtUJ; report-to cf-csp-endpoint", 'X-Content-Type-Options': 'nosniff', 'Report-To': '{"group":"cf-csp-endpoint","max_age":86400,"endpoints":[{"url":"https://csp-reporting.cloudflare.com/cdn-cgi/script_monitor/report?m=Q8NSN2nLwDT5ySp8oE1_cjtlXupX2jEvNZMYL5w4bkI-1782152153.3393404-1.0.1.1-5hvCXyUsgQXYLOothkZKppwL4ci_1YRjGrh.AUrlkO1bVu.RWCpLdwKIgBHSma1IEcN_w7.PqJBQOyUBuaePzJCYVnidFi0ruMdNKLJAiNeb9Gfn4R4ZWb3UzhFAEPKVFgW2MSQPKi1DZSgRSil6rlLEmXgbyqX_vetKs61yHvwpUuJLwQamQywUrR6BNtUJ"}]}', 'CF-RAY': 'a0fd3dae5bf9a6d1-DEL'} 
  body=Could not find account #0 
  </msg>
-<msg time="2026-06-20T14:52:22.480928" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2026-06-22T23:45:53.887932" level="INFO">C:\Users\mridu\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'parabank.parasoft.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2026-06-20T14:52:22.481080" level="INFO">${response} = &lt;Response [400]&gt;</msg>
+<msg time="2026-06-22T23:45:53.888171" level="INFO">${response} = &lt;Response [400]&gt;</msg>
 <var>${response}</var>
 <arg>parabank</arg>
 <arg>/accounts/000000</arg>
 <arg>expected_status=any</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2026-06-20T14:52:21.910725" elapsed="0.570409"/>
+<status status="PASS" start="2026-06-22T23:45:53.349398" elapsed="0.538824"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Response status: ${response.status_code}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-06-20T14:52:22.481951" elapsed="0.000569"/>
+<status status="PASS" start="2026-06-22T23:45:53.889227" elapsed="0.000819"/>
 </kw>
 <kw name="Should Not Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-06-20T14:52:22.483147" level="INFO">Argument types are:
+<msg time="2026-06-22T23:45:53.890929" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are equal after converting them to integers.</doc>
-<status status="PASS" start="2026-06-20T14:52:22.482723" elapsed="0.000478"/>
+<status status="PASS" start="2026-06-22T23:45:53.890432" elapsed="0.000558"/>
 </kw>
 <doc>Call GET /accounts/000000 with a fake account ID — expect a 4xx response</doc>
 <tag>API</tag>
 <tag>negative</tag>
-<status status="PASS" start="2026-06-20T14:52:21.907015" elapsed="0.576749"/>
+<status status="PASS" start="2026-06-22T23:45:53.347309" elapsed="0.544316"/>
 </test>
-<status status="PASS" start="2026-06-20T14:52:21.550179" elapsed="0.934343"/>
+<status status="PASS" start="2026-06-22T23:45:53.075698" elapsed="0.816652"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:52:21.548746" elapsed="0.937628"/>
+<status status="PASS" start="2026-06-22T23:45:53.074776" elapsed="0.819449"/>
 </suite>
-<status status="PASS" start="2026-06-20T14:52:21.525748" elapsed="0.961002"/>
+<status status="PASS" start="2026-06-22T23:45:53.064483" elapsed="0.830173"/>
 </suite>
 <statistics>
 <total>

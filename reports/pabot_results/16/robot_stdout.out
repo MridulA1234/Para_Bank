@@ -5,30 +5,11 @@ Tests.NEGATIVE
 ==============================================================================
 Tests.NEGATIVE.TC-NEG-03
 ==============================================================================
-TC-NEG-03 Transfer Negative Amount :: Enter -100 as transfer amount   | FAIL |
-InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=149.0.7827.103)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff79c4c3fa5+14925]
-	chromedriver!GetHandleVerifier [0x7ff79c4c4000+14980]
-	chromedriver!(No symbol) [0x7ff79c00793d]
-	chromedriver!(No symbol) [0x7ff79bff2d82]
-	chromedriver!(No symbol) [0x7ff79c0190cc]
-	chromedriver!(No symbol) [0x7ff79c091aa0]
-	chromedriver!(No symbol) [0x7ff79c0aec82]
-	chromedriver!(No symbol) [0x7ff79c05401c]
-	chromedriver!(No symbol) [0x7ff79c054f43]
-	chromedriver!GetHandleVerifier [0x7ff79caa7591+5f7f11]
-	chromedriver!GetHandleVerifier [0x7ff79caa1902+5f2282]
-	chromedriver!GetHandleVerifier [0x7ff79cac7115+617a95]
-	chromedriver!GetHandleVerifier [0x7ff79c4e1dce+3274e]
-	chromedriver!GetHandleVerifier [0x7ff79c4ea82c+3b1ac]
-	chromedriver!GetHandleVerifier [0x7ff79c4cd744+1e0c4]
-	chromedriver!GetHandleVerifier [0x7ff79c4cd8d4+1e254]
-	chromedriver!GetHandleVerifier [0x7ff79c4b1447+1dc7]
-	KERNEL32!BaseThreadInitThunk [0x7ff86a57e957+17]
-	ntdll!RtlUserThreadStart [0x7ff86c0c427c+2c]
+TC-NEG-03 Transfer Negative Amount :: Enter -100 as transfer amount   From dropdown options: []
+From dropdown options: ['12345', '12456', '12567', '12678', '12789', '12900', '13011', '13122', '13233', '13344', '13677', '13788', '14121', '14232', '14343', '14454', '14676', '14787', '14898', '15009', '15120', '15342', '15453', '15564', '54321']
+Submitted transfer with negative amount -100
+| FAIL |
+Page should not have contained text 'Error!'.
 ------------------------------------------------------------------------------
 Tests.NEGATIVE.TC-NEG-03                                              | FAIL |
 1 test, 0 passed, 1 failed

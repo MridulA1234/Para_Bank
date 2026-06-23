@@ -5,16 +5,16 @@ Tests.API
 ==============================================================================
 Tests.API.TC-API-04
 ==============================================================================
-TC-API-04 Verify Credit Transaction History :: Verify transaction ... | FAIL |
-500 != 200
+TC-API-04 Verify Credit Transaction History :: Verify transaction ... [{"id":16585,"accountId":13455,"type":"Credit","date":1782086400000,"amount":150.00,"description":"Funds Transfer Received"}]
+| PASS |
 ------------------------------------------------------------------------------
-Tests.API.TC-API-04                                                   | FAIL |
-1 test, 0 passed, 1 failed
+Tests.API.TC-API-04                                                   | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests.API                                                             | FAIL |
-1 test, 0 passed, 1 failed
+Tests.API                                                             | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\10\output.xml

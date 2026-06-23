@@ -5,7 +5,7 @@ Tests.API
 ==============================================================================
 Tests.API.TC-API-02
 ==============================================================================
-TC-API-02 Verify Specific Account Details :: Verify GET account de... {"id":13344,"customerId":12212,"type":"CHECKING","balance":162.43}
+TC-API-02 Verify Specific Account Details :: Verify GET account de... {"id":13344,"customerId":12212,"type":"SAVINGS","balance":1231.10}
 | PASS |
 ------------------------------------------------------------------------------
 Tests.API.TC-API-02                                                   | PASS |

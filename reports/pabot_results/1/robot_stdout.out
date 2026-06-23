@@ -5,16 +5,15 @@ Tests.01 UI
 ==============================================================================
 Tests.01 UI.TC-UI-02
 ==============================================================================
-TC-UI-02 Successful Login to ParaBank :: Test user login with vali... | FAIL |
-Element with locator 'xpath=//input[@name="username"]' not found.
+TC-UI-02 Successful Login to ParaBank :: Test user login with vali... | PASS |
 ------------------------------------------------------------------------------
-Tests.01 UI.TC-UI-02                                                  | FAIL |
-1 test, 0 passed, 1 failed
+Tests.01 UI.TC-UI-02                                                  | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests.01 UI                                                           | FAIL |
-1 test, 0 passed, 1 failed
+Tests.01 UI                                                           | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Tests                                                                 | FAIL |
-1 test, 0 passed, 1 failed
+Tests                                                                 | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
 Output:  D:\parabank\reports\pabot_results\1\output.xml
